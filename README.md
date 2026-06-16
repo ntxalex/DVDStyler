@@ -1,0 +1,13 @@
+# DVDStyler
+
+DVDStyler is a cross-platform free DVD authoring application that makes possible for video enthusiasts to create professional-looking DVDs.
+
+## Build Instructions
+
+See [BUILD.md](BUILD.md) for the latest MacOS build instructions.
+
+## License
+
+DVDStyler is free software. You may use it for any personal, commercial or educational purpose, including installing it on as many different computers as you wish. DVDStyler is licensed under the GNU General Public License (GPL).
+
+See <http://www.dvdstyler.org> for more information.
