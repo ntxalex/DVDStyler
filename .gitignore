@@ -18,3 +18,4 @@
 /DVDStyler.app/
 *.dmg
 .DS_Store
+.vscode/
