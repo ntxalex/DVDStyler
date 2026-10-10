@@ -250,18 +250,6 @@ bool wxFfmpegMediaEncoder::addVideoStream(int codecId, VideoFormat videoFormat, 
 	return true;
 }
 
-bool hasSampleFmt(AVCodec* codec, AVSampleFormat sample_fmt) {
-	if (codec != NULL && codec->sample_fmts != NULL) {
-		int fIdx = 0;
-		while (codec->sample_fmts[fIdx] >= 0) {
-			if (codec->sample_fmts[fIdx] == sample_fmt)
-				return true;
-			fIdx++;
-		}
-	}
-	return false;
-}
-
 bool wxFfmpegMediaEncoder::addAudioStream(int codecId) {
 	if (codecId == AV_CODEC_ID_NONE) {
 		m_audioStm = NULL;
