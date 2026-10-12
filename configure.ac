@@ -1,7 +1,9 @@
 dnl Process this file with autoconf to produce a configure script.
 
 dnl initialization
-AC_INIT([DVDStyler],[3.3b4],[http://www.dvdstyler.org])
+AC_INIT([DVDStyler],[3.4],[http://www.dvdstyler.org])
+CURRENT_YEAR=`date +%Y`
+AC_SUBST([CURRENT_YEAR])
 AC_CANONICAL_TARGET
 AM_INIT_AUTOMAKE
 AM_MAINTAINER_MODE

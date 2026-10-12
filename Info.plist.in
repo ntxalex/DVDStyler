@@ -45,11 +45,11 @@
 	<key>CFBundleShortVersionString</key>
 	<string>@VERSION@</string>
 	<key>CFBundleGetInfoString</key>
-	<string>DVDStyler version @VERSION@, (c) 2014 Alex Th&#252;ring</string>
+	<string>DVDStyler version @VERSION@, (c) @CURRENT_YEAR@ Alex Th&#252;ring</string>
 	<key>CFBundleLongVersionString</key>
-	<string>@VERSION@, (c) 2014 Alex Th&#252;ring</string>
+	<string>@VERSION@, (c) @CURRENT_YEAR@ Alex Th&#252;ring</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright 2014 Alex Th&#252;ring</string>
+	<string>Copyright @CURRENT_YEAR@ Alex Th&#252;ring</string>
 	<key>LSRequiresCarbon</key>
 	<true/>
 	<key>CSResourcesFileMapped</key>
