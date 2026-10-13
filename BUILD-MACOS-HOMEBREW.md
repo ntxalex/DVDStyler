@@ -1,5 +1,7 @@
 # How to Build DVDStyler on MacOS using Homebrew
 
+Note that this process does **not** produce universal binaries. It only produces binaries native to the platform on which it is being run (Intel systems will produce Intel binaries, Apple systems will produce AArch64 binaries).
+
 ## 1 Install Prerequisites
 
 You will need [Homebrew](https://brew.sh/) and Xcode to follow this procedure. Xcode can be installed via the App Store, and instructions to install homebrew are at the homebrew site.
