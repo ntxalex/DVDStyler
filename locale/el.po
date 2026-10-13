@@ -1,3 +1,4 @@
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: DVDStyler v3.0\n"
@@ -10,8 +11,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Basepath: ..\n"
 "X-Generator: Poedit 1.5.5\n"
+"X-Poedit-Basepath: ..\n"
 "X-Poedit-SearchPath-0: src\n"
 "X-Poedit-SearchPath-1: wxVillaLib\n"
 "X-Poedit-SearchPath-2: buttons\n"
@@ -42,8 +43,11 @@ msgid "Copyright: "
 msgstr "Πνευματικά δικαιώματα:"
 
 #: src/About.cpp:73
-msgid "DVDStyler is a crossplatform authoring system for Video DVD production."
-msgstr "DVDStyler είναι ένα πρόγραμμα δημιουργίας DVD πολλαπλών λειτουργικών συστημάτων."
+msgid ""
+"DVDStyler is a crossplatform authoring system for Video DVD production."
+msgstr ""
+"DVDStyler είναι ένα πρόγραμμα δημιουργίας DVD πολλαπλών λειτουργικών "
+"συστημάτων."
 
 #: src/About.cpp:85
 msgid "Forum"
@@ -51,10 +55,12 @@ msgstr "Μορφή:"
 
 #: src/About.cpp:86
 #, c-format
-msgid "Please use %sDVDStyler forum%s to get support, ask questions, or discuss this software."
+msgid ""
+"Please use %sDVDStyler forum%s to get support, ask questions, or discuss "
+"this software."
 msgstr ""
-"Χρησιμοποίησε το %sDVDStyler forum%s για υποστήριξη, για να κάνεις μία ερώτηση ή να συζητήσεις για την "
-"εφαρμογής."
+"Χρησιμοποίησε το %sDVDStyler forum%s για υποστήριξη, για να κάνεις μία "
+"ερώτηση ή να συζητήσεις για την εφαρμογής."
 
 #: src/About.cpp:88
 msgid "WIKI"
@@ -63,11 +69,11 @@ msgstr "WIKI"
 #: src/About.cpp:89
 #, c-format
 msgid ""
-"Some documentation and %sFAQ%s you can find in %sDVDStyler WIKI%s or you can publish there your comments or "
-"small guides."
+"Some documentation and %sFAQ%s you can find in %sDVDStyler WIKI%s or you can"
+" publish there your comments or small guides."
 msgstr ""
-"Βιβλιογραφία και %sFAQ%s μπορεί να βρεθεί στο %sDVDStyler WIKI%s ; ή μπορείς και να δημοσιεύσεις σχόλια ή "
-"μικρό οδηγό χρήσης."
+"Βιβλιογραφία και %sFAQ%s μπορεί να βρεθεί στο %sDVDStyler WIKI%s ; ή μπορείς"
+" και να δημοσιεύσεις σχόλια ή μικρό οδηγό χρήσης."
 
 #: src/About.cpp:92
 msgid "Bugs & RFE"
@@ -76,11 +82,11 @@ msgstr "Bugs & RFE"
 #: src/About.cpp:93
 #, c-format
 msgid ""
-"Please use %sSourceforge Bugtracing system%s to report bug and %sSourceforge RFE system%s to submit a new "
-"feature request."
+"Please use the %sGitHub issue tracker%s to report bugs or submit feature "
+"requests."
 msgstr ""
-"Χρησιμοποίησε το %sSourceforge Bugtracing system%s για την αναφορά σφαλμάτων και το %sSourceforge RFE system"
-"%s για την καταχώριση μελλοντικής δυνατότητας της εφαρμογής."
+"Παρακαλώ χρησιμοποιήστε τον %sGitHub issue tracker%s για να αναφέρετε "
+"σφάλματα ή να υποβάλετε αιτήματα για νέα χαρακτηριστικά."
 
 #: src/About.cpp:98
 msgid "Support"
@@ -112,27 +118,34 @@ msgstr "Εκδότης"
 
 #: src/About.cpp:143
 msgid ""
-"DVDStyler is <a href='http://www.gnu.org/philosophy/free-sw.html'>free software</a> distributed under <a "
-"href='http://www.gnu.org/copyleft/gpl.html'>GNU General Public License (GPL)</a>. Please visit those sites "
-"for details of each agreement."
+"DVDStyler is <a href='http://www.gnu.org/philosophy/free-sw.html'>free "
+"software</a> distributed under <a "
+"href='http://www.gnu.org/copyleft/gpl.html'>GNU General Public License "
+"(GPL)</a>. Please visit those sites for details of each agreement."
 msgstr ""
-"DVDStyler είναι ένα <a href='http://www.gnu.org/philosophy/free-sw.html'>δωρεάν λογισμικό</a> που "
-"διανέμεται υπό την <a href='http://www.gnu.org/copyleft/gpl.html'>GNU General Public License (GPL)</a>. "
-"Παρακαλώ επισκεφθείτε τις ιστοσελίδες για λεπτομέρειες για κάθε συμφωνία."
+"DVDStyler είναι ένα <a href='http://www.gnu.org/philosophy/free-"
+"sw.html'>δωρεάν λογισμικό</a> που διανέμεται υπό την <a "
+"href='http://www.gnu.org/copyleft/gpl.html'>GNU General Public License "
+"(GPL)</a>. Παρακαλώ επισκεφθείτε τις ιστοσελίδες για λεπτομέρειες για κάθε "
+"συμφωνία."
 
 #: src/About.cpp:148
 msgid ""
-"THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT "
-"LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO "
-"EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER "
-"IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE "
-"USE OR OTHER DEALINGS IN THE SOFTWARE."
+"THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR"
+" IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, "
+"FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE "
+"AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER "
+"LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING "
+"FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS"
+" IN THE SOFTWARE."
 msgstr ""
-"THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT "
-"LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO "
-"EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER "
-"IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE "
-"USE OR OTHER DEALINGS IN THE SOFTWARE."
+"THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR"
+" IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, "
+"FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE "
+"AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER "
+"LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING "
+"FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS"
+" IN THE SOFTWARE."
 
 #: src/About.cpp:157
 msgid "Licence"
@@ -189,8 +202,8 @@ msgstr "Ιδιότητες ηχου"
 msgid "File Name:"
 msgstr "Ονομα αρχειου:"
 
-#: src/AudioPropDlg.cpp:87 src/TitlePropDlg.cpp:196 src/VideoFrameDlg.cpp:77 src/VideoPropDlg.cpp:114
-#: src/VobListBox.cpp:109
+#: src/AudioPropDlg.cpp:87 src/TitlePropDlg.cpp:196 src/VideoFrameDlg.cpp:77
+#: src/VideoPropDlg.cpp:114 src/VobListBox.cpp:109
 msgid "Duration:"
 msgstr "Διάρκεια:"
 
@@ -264,16 +277,21 @@ msgstr "Ακυρη τιμη εντασης '%s'"
 msgid "Analysis of audio"
 msgstr "Ανάλυση του ήχου"
 
-#: src/AudioPropDlg.cpp:395 src/MainWin.cpp:872 src/SysUtils.cpp:303 src/VobListBox.cpp:655
+#: src/AudioPropDlg.cpp:395 src/MainWin.cpp:872 src/SysUtils.cpp:303
+#: src/VobListBox.cpp:655
 msgid "Please wait..."
 msgstr "Παρακαλώ περιμένετε..."
 
-#: src/BurnDlg.cpp:104 src/BurnDlg.cpp:459 src/BurnDlg.cpp:466 src/BurnDlg.cpp:588 src/BurnDlg.cpp:595
-#: src/BurnDlg.cpp:601 src/BurnDlg.cpp:608 src/BurnDlg.cpp:615 src/BurnDlg.cpp:620 src/BurnDlg.cpp:627
-#: src/BurnDlg.cpp:632 src/BurnDlg.cpp:638 src/BurnDlg.cpp:644 src/BurnDlg.cpp:657 src/BurnDlg.cpp:660
-#: src/MainWin.cpp:1073 src/MainWin.cpp:1094 src/MainWin.cpp:1099 src/ProcessBurn.cpp:68
-#: src/ProcessBurn.cpp:86 src/ProcessBurn.cpp:128 src/ProcessFormatDvd.cpp:44 src/ProcessFormatDvd.cpp:53
-#: src/ProcessPreview.cpp:45 src/ProcessPreview.cpp:53 src/ProcessPreview.cpp:61 src/ProcessPreview.cpp:82
+#: src/BurnDlg.cpp:104 src/BurnDlg.cpp:459 src/BurnDlg.cpp:466
+#: src/BurnDlg.cpp:588 src/BurnDlg.cpp:595 src/BurnDlg.cpp:601
+#: src/BurnDlg.cpp:608 src/BurnDlg.cpp:615 src/BurnDlg.cpp:620
+#: src/BurnDlg.cpp:627 src/BurnDlg.cpp:632 src/BurnDlg.cpp:638
+#: src/BurnDlg.cpp:644 src/BurnDlg.cpp:657 src/BurnDlg.cpp:660
+#: src/MainWin.cpp:1073 src/MainWin.cpp:1094 src/MainWin.cpp:1099
+#: src/ProcessBurn.cpp:68 src/ProcessBurn.cpp:86 src/ProcessBurn.cpp:128
+#: src/ProcessFormatDvd.cpp:44 src/ProcessFormatDvd.cpp:53
+#: src/ProcessPreview.cpp:45 src/ProcessPreview.cpp:53
+#: src/ProcessPreview.cpp:61 src/ProcessPreview.cpp:82
 #: src/ProcessPreview.cpp:87 src/TitlesetManager.cpp:467
 msgid "Burn"
 msgstr "Εγγραφή"
@@ -282,8 +300,9 @@ msgstr "Εγγραφή"
 msgid "Temp directory:"
 msgstr "Προσωρινός φάκελος:"
 
-#: src/BurnDlg.cpp:114 src/BurnDlg.cpp:138 src/BurnDlg.cpp:160 src/BurnDlg.cpp:186
-#: src/SubtitlePropDlg.cpp:148 src/SubtitlePropDlg.cpp:161 src/SubtitlePropDlg.cpp:179
+#: src/BurnDlg.cpp:114 src/BurnDlg.cpp:138 src/BurnDlg.cpp:160
+#: src/BurnDlg.cpp:186 src/SubtitlePropDlg.cpp:148 src/SubtitlePropDlg.cpp:161
+#: src/SubtitlePropDlg.cpp:179
 msgid "..."
 msgstr "..."
 
@@ -339,7 +358,8 @@ msgstr "προσθήκη διόρθωσης δεδομένων λάθους"
 msgid "Start"
 msgstr "Έναρξη"
 
-#: src/BurnDlg.cpp:229 src/SubtitlePropDlg.cpp:244 src/VideoFrameDlg.cpp:75 wxVillaLib/PropDlg.cpp:229
+#: src/BurnDlg.cpp:229 src/SubtitlePropDlg.cpp:244 src/VideoFrameDlg.cpp:75
+#: wxVillaLib/PropDlg.cpp:229
 msgid "Reset"
 msgstr "Reset"
 
@@ -359,7 +379,8 @@ msgstr "Προσαρμοσμένο πρόγραμμα αναπαραγωγής �
 msgid "N/A"
 msgstr "δεν είναι διαθέσιμο"
 
-#: src/BurnDlg.cpp:401 src/BurnDlg.cpp:436 src/BurnDlg.cpp:437 src/BurnDlg.cpp:438
+#: src/BurnDlg.cpp:401 src/BurnDlg.cpp:436 src/BurnDlg.cpp:437
+#: src/BurnDlg.cpp:438
 msgid "GB"
 msgstr "GB"
 
@@ -375,8 +396,8 @@ msgstr "Καθαρισμός φακέλου προσωρινών αρχείων"
 msgid "Choose a directory"
 msgstr "Επιλογή φακέλου"
 
-#: src/BurnDlg.cpp:536 src/MainWin.cpp:1218 src/TitlePropDlg.cpp:423 src/TitlePropDlg.cpp:439
-#: wxVillaLib/PropDlg.cpp:815
+#: src/BurnDlg.cpp:536 src/MainWin.cpp:1218 src/TitlePropDlg.cpp:423
+#: src/TitlePropDlg.cpp:439 wxVillaLib/PropDlg.cpp:815
 msgid "Choose a file"
 msgstr "Επιλέξτε ένα αρχείο"
 
@@ -384,9 +405,9 @@ msgstr "Επιλέξτε ένα αρχείο"
 msgid "Programs"
 msgstr "Προγράμματα"
 
-#: src/BurnDlg.cpp:538 src/MainWin.cpp:1052 src/MainWin.cpp:1213 src/MainWin.cpp:1217
-#: src/MenuObjectPropDlg.cpp:458 src/MenuPropDlg.cpp:141 src/MenuPropDlg.cpp:155 src/TitlePropDlg.cpp:235
-#: src/TitlePropDlg.cpp:425
+#: src/BurnDlg.cpp:538 src/MainWin.cpp:1052 src/MainWin.cpp:1213
+#: src/MainWin.cpp:1217 src/MenuObjectPropDlg.cpp:458 src/MenuPropDlg.cpp:141
+#: src/MenuPropDlg.cpp:155 src/TitlePropDlg.cpp:235 src/TitlePropDlg.cpp:425
 msgid "All Files"
 msgstr "Όλα τα αρχεία"
 
@@ -399,16 +420,19 @@ msgid "Please enter output directory"
 msgstr "Παρακαλούμε εισάγετε τον κατάλογο εξόδου"
 
 #: src/BurnDlg.cpp:594
-msgid "Output directory contains files. Please choose another output directory."
-msgstr "Ο κατάλογο εξόδου περιέχει αρχεία. Παρακαλώ επιλέξτε ένα άλλο κατάλογο εξόδου."
+msgid ""
+"Output directory contains files. Please choose another output directory."
+msgstr ""
+"Ο κατάλογο εξόδου περιέχει αρχεία. Παρακαλώ επιλέξτε ένα άλλο κατάλογο "
+"εξόδου."
 
 #: src/BurnDlg.cpp:600
 #, c-format
 msgid "Directory '%s' already exist. Do you want to overwrite it?"
 msgstr "Ο κατάλογος '%s' υπαρχει ηδη. Θελετε να αντικατασταθεί;"
 
-#: src/BurnDlg.cpp:608 src/BurnDlg.cpp:660 src/ProcessCleanTemp.cpp:43 src/ProcessCleanTemp.cpp:47
-#: src/ProcessCleanTemp.cpp:51
+#: src/BurnDlg.cpp:608 src/BurnDlg.cpp:660 src/ProcessCleanTemp.cpp:43
+#: src/ProcessCleanTemp.cpp:47 src/ProcessCleanTemp.cpp:51
 #, c-format
 msgid "Can't create directory '%s'"
 msgstr "Δεν μπορεί να γίνει η δημιουργία του φακέλου '%s'"
@@ -467,13 +491,15 @@ msgstr "Ιδιότητα"
 msgid "fill"
 msgstr ""
 
-#: src/ButtonAddParamDlg.cpp:67 src/ButtonAddParamDlg.cpp:72 src/ButtonAddParamDlg.cpp:77
-#: src/MenuEditor.cpp:548 buttons/arrow-text-left.xml:8 buttons/arrow-text-left.xml:12
-#: buttons/arrow-text-right.xml:8 buttons/arrow-text-right.xml:13 buttons/frame-text.xml:25
-#: buttons/frame-text.xml:70 buttons/pill-opacity.xml:14 buttons/pill-opacity.xml:64
-#: buttons/pill-stroke.xml:14 buttons/pill-stroke.xml:73 buttons/pill2.xml:24 buttons/pill2.xml:36
-#: buttons/pill3.xml:17 buttons/pill3.xml:29 buttons/text-v3.xml:3 objects/text-v2.xml:3
-#: objects/text-v2.xml:19
+#: src/ButtonAddParamDlg.cpp:67 src/ButtonAddParamDlg.cpp:72
+#: src/ButtonAddParamDlg.cpp:77 src/MenuEditor.cpp:548
+#: buttons/arrow-text-left.xml:8 buttons/arrow-text-left.xml:12
+#: buttons/arrow-text-right.xml:8 buttons/arrow-text-right.xml:13
+#: buttons/frame-text.xml:25 buttons/frame-text.xml:70
+#: buttons/pill-opacity.xml:14 buttons/pill-opacity.xml:64
+#: buttons/pill-stroke.xml:14 buttons/pill-stroke.xml:73 buttons/pill2.xml:24
+#: buttons/pill2.xml:36 buttons/pill3.xml:17 buttons/pill3.xml:29
+#: buttons/text-v3.xml:3 objects/text-v2.xml:3 objects/text-v2.xml:19
 msgid "Text"
 msgstr "Κείμενο"
 
@@ -490,8 +516,9 @@ msgstr ""
 msgid "name"
 msgstr ""
 
-#: src/ButtonEditDlg.cpp:184 src/DVDAction.cpp:184 src/MenuObjectPropDlg.cpp:439
-#: src/MenuObjectPropDlg.cpp:679 src/MenuObjectPropDlg.cpp:688 src/MenuObjectPropDlg.cpp:700
+#: src/ButtonEditDlg.cpp:184 src/DVDAction.cpp:184
+#: src/MenuObjectPropDlg.cpp:439 src/MenuObjectPropDlg.cpp:679
+#: src/MenuObjectPropDlg.cpp:688 src/MenuObjectPropDlg.cpp:700
 msgid "title"
 msgstr "Τίτλος"
 
@@ -546,8 +573,9 @@ msgstr "Κουμπιά"
 msgid "Directory:"
 msgstr "Φάκελος"
 
-#: src/ButtonEditDlg.cpp:287 buttons/circle-outline.xml:16 buttons/circle.xml:15 buttons/pill.xml:44
-#: buttons/text-circle-v2.xml:19 buttons/text-square-v2.xml:20 buttons/text-underlined-v3.xml:19
+#: src/ButtonEditDlg.cpp:287 buttons/circle-outline.xml:16
+#: buttons/circle.xml:15 buttons/pill.xml:44 buttons/text-circle-v2.xml:19
+#: buttons/text-square-v2.xml:20 buttons/text-underlined-v3.xml:19
 #: buttons/text-v3.xml:19
 msgid "Label"
 msgstr "Ετικέτα"
@@ -570,18 +598,23 @@ msgstr "Τίτλος"
 msgid "Default width:"
 msgstr "Προεπιλεγμένη μορφή ήχου:"
 
-#: src/ButtonEditDlg.cpp:307 src/ButtonEditDlg.cpp:330 src/ButtonEditDlg.cpp:354 src/ButtonEditDlg.cpp:377
+#: src/ButtonEditDlg.cpp:307 src/ButtonEditDlg.cpp:330
+#: src/ButtonEditDlg.cpp:354 src/ButtonEditDlg.cpp:377
 #, fuzzy
 msgid "or"
 msgstr "Πυρήνας"
 
-#: src/ButtonEditDlg.cpp:311 src/ButtonEditDlg.cpp:316 src/ButtonEditDlg.cpp:334 src/ButtonEditDlg.cpp:339
-#: src/ButtonEditDlg.cpp:358 src/ButtonEditDlg.cpp:363 src/ButtonEditDlg.cpp:381 src/ButtonEditDlg.cpp:386
+#: src/ButtonEditDlg.cpp:311 src/ButtonEditDlg.cpp:316
+#: src/ButtonEditDlg.cpp:334 src/ButtonEditDlg.cpp:339
+#: src/ButtonEditDlg.cpp:358 src/ButtonEditDlg.cpp:363
+#: src/ButtonEditDlg.cpp:381 src/ButtonEditDlg.cpp:386
 msgid "+"
 msgstr ""
 
-#: src/ButtonEditDlg.cpp:321 src/ButtonEditDlg.cpp:344 src/ButtonEditDlg.cpp:368 src/ButtonEditDlg.cpp:391
-#: src/SubtitlePropDlg.cpp:153 src/SubtitlePropDlg.cpp:167 src/SubtitlePropDlg.cpp:184
+#: src/ButtonEditDlg.cpp:321 src/ButtonEditDlg.cpp:344
+#: src/ButtonEditDlg.cpp:368 src/ButtonEditDlg.cpp:391
+#: src/SubtitlePropDlg.cpp:153 src/SubtitlePropDlg.cpp:167
+#: src/SubtitlePropDlg.cpp:184
 msgid "%"
 msgstr "%"
 
@@ -628,7 +661,8 @@ msgstr "Απομακρυνση αρχειου"
 msgid "No SVG element is selected"
 msgstr ""
 
-#: src/ButtonEditDlg.cpp:643 src/NewProjectDlg.cpp:51 src/NewProjectDlg.cpp:134
+#: src/ButtonEditDlg.cpp:643 src/NewProjectDlg.cpp:51
+#: src/NewProjectDlg.cpp:134
 msgid "Info"
 msgstr ""
 
@@ -638,8 +672,9 @@ msgid ""
 " element for a new parameter"
 msgstr ""
 
-#: src/Cache.cpp:238 src/Cache.cpp:263 src/Process.cpp:25 src/ProcessMenuTransitions.cpp:121
-#: src/ProcessTranscode.cpp:195 src/ProcessTranscode.cpp:211
+#: src/Cache.cpp:238 src/Cache.cpp:263 src/Process.cpp:25
+#: src/ProcessMenuTransitions.cpp:121 src/ProcessTranscode.cpp:195
+#: src/ProcessTranscode.cpp:211
 #, c-format
 msgid "Can't remove file '%s'"
 msgstr "Δεν μπορεί να γίνει αφαίρεση του αρχείου '%s'"
@@ -648,8 +683,10 @@ msgstr "Δεν μπορεί να γίνει αφαίρεση του αρχείο
 #, c-format
 msgid "There is %d file (%0.1f MB) in the transcoding cache."
 msgid_plural "There are %d files (%0.1f MB) in the transcoding cache."
-msgstr[0] "Υπάρχει %d αρχείο (%0.1f MB) στη μνήμη προσωρινής αποθήκευσης transcoding."
-msgstr[1] "Υπάρχουν %d αρχεία (%0.1f MB) στη μνήμη προσωρινής αποθήκευσης transcoding."
+msgstr[0] ""
+"Υπάρχει %d αρχείο (%0.1f MB) στη μνήμη προσωρινής αποθήκευσης transcoding."
+msgstr[1] ""
+"Υπάρχουν %d αρχεία (%0.1f MB) στη μνήμη προσωρινής αποθήκευσης transcoding."
 
 #: src/Cache.cpp:375
 msgid "Do you want to clear the cache?"
@@ -675,12 +712,13 @@ msgstr "Χρονος"
 msgid "Type:"
 msgstr "Τυπος:"
 
-#: src/ChaptersDlg.cpp:145 src/MenuCellsDlg.cpp:44 src/MenuCellsDlg.cpp:64 src/MenuCellsDlg.cpp:195
-#: src/MenuPropDlg.cpp:216
+#: src/ChaptersDlg.cpp:145 src/MenuCellsDlg.cpp:44 src/MenuCellsDlg.cpp:64
+#: src/MenuCellsDlg.cpp:195 src/MenuPropDlg.cpp:216
 msgid "Chapter"
 msgstr "Κεφάλαιο"
 
-#: src/ChaptersDlg.cpp:147 src/MenuCellsDlg.cpp:44 src/MenuCellsDlg.cpp:65 src/MenuCellsDlg.cpp:195
+#: src/ChaptersDlg.cpp:147 src/MenuCellsDlg.cpp:44 src/MenuCellsDlg.cpp:65
+#: src/MenuCellsDlg.cpp:195
 msgid "Program"
 msgstr "Προγραμμα"
 
@@ -692,12 +730,13 @@ msgstr "Κανονικό κελί"
 msgid "End:"
 msgstr "Τελος:"
 
-#: src/ChaptersDlg.cpp:156 src/DVD.cpp:966 src/DVD.cpp:1003 src/MenuPropDlg.cpp:195
+#: src/ChaptersDlg.cpp:156 src/DVD.cpp:966 src/DVD.cpp:1003
+#: src/MenuPropDlg.cpp:195
 msgid "Auto"
 msgstr "Αυτόματο"
 
-#: src/ChaptersDlg.cpp:157 src/DVD.cpp:1006 src/MenuObjectPropDlg.cpp:161 src/MenuObjectPropDlg.cpp:559
-#: src/SettingsDlg.cpp:181
+#: src/ChaptersDlg.cpp:157 src/DVD.cpp:1006 src/MenuObjectPropDlg.cpp:161
+#: src/MenuObjectPropDlg.cpp:559 src/SettingsDlg.cpp:181
 msgid "Custom"
 msgstr "Ρυθμιζόμενο"
 
@@ -705,9 +744,10 @@ msgstr "Ρυθμιζόμενο"
 msgid "Pause:"
 msgstr "Παύση:"
 
-#: src/ChaptersDlg.cpp:174 src/MainWin.cpp:621 src/MenuPropDlg.cpp:171 src/SettingsDlg.cpp:167
-#: src/SettingsDlg.cpp:169 src/TitlePropDlg.cpp:150 src/TitlePropDlg.cpp:196 src/VideoFrameDlg.cpp:82
-#: src/VideoPropDlg.cpp:190 src/VideoPropDlg.cpp:195
+#: src/ChaptersDlg.cpp:174 src/MainWin.cpp:621 src/MenuPropDlg.cpp:171
+#: src/SettingsDlg.cpp:167 src/SettingsDlg.cpp:169 src/TitlePropDlg.cpp:150
+#: src/TitlePropDlg.cpp:196 src/VideoFrameDlg.cpp:82 src/VideoPropDlg.cpp:190
+#: src/VideoPropDlg.cpp:195
 msgid "sec"
 msgstr "δευ."
 
@@ -728,7 +768,8 @@ msgstr "Λανθασμένο όνομα συσκευής '%s'"
 msgid "Start time cannot be after end time"
 msgstr "Η ωρα εναρξης δεν μπορει να ρυθμιστει μετα την ωρα τελους"
 
-#: src/DirCtrl.cpp:24 src/MainWin.cpp:276 src/MainWin.cpp:283 src/MainWin.cpp:286
+#: src/DirCtrl.cpp:24 src/MainWin.cpp:276 src/MainWin.cpp:283
+#: src/MainWin.cpp:286
 msgid "&Refresh"
 msgstr "&Ανανέωση"
 
@@ -737,7 +778,8 @@ msgid "Wide screen DVD menu can contain maximal 12 buttons"
 msgstr "Το DVD μενού μπορεί να περιέχει το πολύ 12 κουμπιά"
 
 #: src/DVD.cpp:273 src/Menu.cpp:1143 src/MenuEditor.cpp:467
-msgid "Wide screen DVD menu (nopanscan/noletterbox) can contain maximal 18 buttons"
+msgid ""
+"Wide screen DVD menu (nopanscan/noletterbox) can contain maximal 18 buttons"
 msgstr "Το DVD μενού μπορεί να περιέχει το πολύ 18 κουμπιά"
 
 #: src/DVD.cpp:277 src/Menu.cpp:1147 src/MenuEditor.cpp:471
@@ -747,8 +789,8 @@ msgstr "Το DVD μενού μπορεί να περιέχει το πολύ 34 
 #: src/DVD.cpp:359
 msgid "Some actions are invalid. Please click 'Details' for more information."
 msgstr ""
-"Ορισμένες ενέργειες δεν είναι έγκυρες. Παρακαλώ κάντε κλικ στο κουμπί 'Λεπτομέρειες', για περισσότερες "
-"πληροφορίες."
+"Ορισμένες ενέργειες δεν είναι έγκυρες. Παρακαλώ κάντε κλικ στο κουμπί "
+"'Λεπτομέρειες', για περισσότερες πληροφορίες."
 
 #: src/DVD.cpp:486 src/MenuObjectDef.cpp:194
 #, c-format
@@ -888,7 +930,8 @@ msgstr "άλμα σε γωνία μενού"
 msgid "jump to chapter menu"
 msgstr "Δεν μπορείς να πηδήσεις από το vmbMenu σε ένα κεφάλαιο."
 
-#: src/DVDAction.cpp:75 src/DVDAction.cpp:184 src/MenuObjectPropDlg.cpp:649 src/MenuObjectPropDlg.cpp:669
+#: src/DVDAction.cpp:75 src/DVDAction.cpp:184 src/MenuObjectPropDlg.cpp:649
+#: src/MenuObjectPropDlg.cpp:669
 msgid "menu"
 msgstr "μενου"
 
@@ -909,8 +952,9 @@ msgstr "πηδημα στον τιτλο %d κεφαλαιο %d"
 msgid "jump to title"
 msgstr "Αναπήδηση σε"
 
-#: src/DVDAction.cpp:183 src/MenuObjectPropDlg.cpp:441 src/MenuObjectPropDlg.cpp:662
-#: src/MenuObjectPropDlg.cpp:671 src/MenuObjectPropDlg.cpp:681 src/MenuObjectPropDlg.cpp:690
+#: src/DVDAction.cpp:183 src/MenuObjectPropDlg.cpp:441
+#: src/MenuObjectPropDlg.cpp:662 src/MenuObjectPropDlg.cpp:671
+#: src/MenuObjectPropDlg.cpp:681 src/MenuObjectPropDlg.cpp:690
 #: src/MenuObjectPropDlg.cpp:699
 msgid "titleset"
 msgstr "σετ τιτλων"
@@ -983,19 +1027,24 @@ msgstr "δεν μπορει να πηδηξει στο κεφαλαιο %d, υπ
 #: src/DVDAction.cpp:241
 #, c-format
 msgid "cannot jump to chapter %d of title %d, only %d exist"
-msgstr "δεν μπορει να πηδηξει στο κεφαλαιο %d του τιτλου %d, υπαρχει μονο το %d "
+msgstr ""
+"δεν μπορει να πηδηξει στο κεφαλαιο %d του τιτλου %d, υπαρχει μονο το %d "
 
 #: src/DVDAction.cpp:253
-msgid "cannot jump to a specific menu in another titleset, only to root/chapter/audio/subtitle/angle menu"
+msgid ""
+"cannot jump to a specific menu in another titleset, only to "
+"root/chapter/audio/subtitle/angle menu"
 msgstr ""
-"δεν μπορει να πηδηξει επο ενα ειδικο μενου σε εναν αλλο σετ τιτλων, μονο σε root/chapter/audio/subtitle/"
-"angle μενου "
+"δεν μπορει να πηδηξει επο ενα ειδικο μενου σε εναν αλλο σετ τιτλων, μονο σε "
+"root/chapter/audio/subtitle/angle μενου "
 
 #: src/DVDAction.cpp:256
-msgid "cannot jump from regular menu to a title in another titleset, use VMGM menu instead"
+msgid ""
+"cannot jump from regular menu to a title in another titleset, use VMGM menu "
+"instead"
 msgstr ""
-"Δεν μπορείτε να πηδήξετε από το κανονικό μενού σε έναν άλλο σετ τίτλων, αντί για αυτό χρησιμοποιήστε το "
-"μενού VMGM"
+"Δεν μπορείτε να πηδήξετε από το κανονικό μενού σε έναν άλλο σετ τίτλων, αντί"
+" για αυτό χρησιμοποιήστε το μενού VMGM"
 
 #: src/DVDAction.cpp:258
 msgid "cannot jump to a title in another titleset"
@@ -1007,7 +1056,9 @@ msgstr "μη έγκυρη ενέργεια"
 
 #: src/DVDAction.cpp:280 src/DVDAction.cpp:371
 msgid "cannot jump to a menu from a title, use 'call' instead"
-msgstr "δεν μπορεί να πηδήξει σε ένα μενού από έναν τίτλο, χρησιμοποιηστε την εντολη «κλήση» "
+msgstr ""
+"δεν μπορεί να πηδήξει σε ένα μενού από έναν τίτλο, χρησιμοποιηστε την εντολη"
+" «κλήση» "
 
 #: src/DVDAction.cpp:287 src/DVDAction.cpp:403
 msgid "chapter"
@@ -1049,11 +1100,14 @@ msgstr "Το 0 δεν ειναι εγκυρος αριθμος μοναδας"
 
 #: src/DVDAction.cpp:377
 msgid "cannot specify chapter when jumping to another menu"
-msgstr "Δεν μπορει να καθοριστει το κεφάλαιο, όταν γινεται άλμα σε ένα άλλο μενού "
+msgstr ""
+"Δεν μπορει να καθοριστει το κεφάλαιο, όταν γινεται άλμα σε ένα άλλο μενού "
 
 #: src/DVDAction.cpp:381
 msgid "cannot omit menu/title if specifying vmgm/titleset"
-msgstr "Δεν μπορει να παραλειφθει το μενού/τίτλος, αν προσδιορίσθει το vmgm/σετ τιτλων "
+msgstr ""
+"Δεν μπορει να παραλειφθει το μενού/τίτλος, αν προσδιορίσθει το vmgm/σετ "
+"τιτλων "
 
 #: src/DVDAction.cpp:385 src/DVDAction.cpp:468
 msgid "VMGM must be specified with FPC"
@@ -1078,11 +1132,14 @@ msgstr "δεν μπορειτε να πηδησετε στο κεφαλαιο %d
 
 #: src/DVDAction.cpp:455
 msgid "cannot 'call' a menu from another menu, use 'jump' instead"
-msgstr "δεν μπορεί να «καλέσει» ένα μενού από άλλο μενού, χρησιμοποιήστε την εντολη «άλμα» "
+msgstr ""
+"δεν μπορεί να «καλέσει» ένα μενού από άλλο μενού, χρησιμοποιήστε την εντολη "
+"«άλμα» "
 
 #: src/DVDAction.cpp:459
 msgid "cannot 'call' another title, use 'jump' instead"
-msgstr "δεν μπορεί να «καλέσει» έναν άλλο τίτλο, χρησιμοποιηστε την εντολη «άλμα»  "
+msgstr ""
+"δεν μπορεί να «καλέσει» έναν άλλο τίτλο, χρησιμοποιηστε την εντολη «άλμα»  "
 
 #: src/DVDAction.cpp:463
 msgid "cannot 'call' a chapter within a menu"
@@ -1199,15 +1256,18 @@ msgstr "&Δημιουργία\tCtrl-N"
 msgid "&Edit"
 msgstr "&Επεξεργασια"
 
-#: src/MainWin.cpp:190 src/MainWin.cpp:333 src/TitlesetManager.cpp:146 src/TitlesetManager.cpp:167
+#: src/MainWin.cpp:190 src/MainWin.cpp:333 src/TitlesetManager.cpp:146
+#: src/TitlesetManager.cpp:167
 msgid "&File..."
 msgstr "&Αρχείο"
 
-#: src/MainWin.cpp:191 src/MainWin.cpp:334 src/TitlesetManager.cpp:147 src/TitlesetManager.cpp:168
+#: src/MainWin.cpp:191 src/MainWin.cpp:334 src/TitlesetManager.cpp:147
+#: src/TitlesetManager.cpp:168
 msgid "File as &chapter..."
 msgstr "Αρχειο ως κεφαλαιο..."
 
-#: src/MainWin.cpp:192 src/MainWin.cpp:335 src/TitlesetManager.cpp:148 src/TitlesetManager.cpp:169
+#: src/MainWin.cpp:192 src/MainWin.cpp:335 src/TitlesetManager.cpp:148
+#: src/TitlesetManager.cpp:169
 msgid "Titles from &DVD..."
 msgstr "Τιτλοι απο το &DVD..."
 
@@ -1227,8 +1287,8 @@ msgstr "Μενού &VMGM"
 msgid "&Titleset"
 msgstr "&Σετ τίτλων"
 
-#: src/MainWin.cpp:197 src/MenuEditor.cpp:360 src/MenuEditor.cpp:382 src/TitlesetManager.cpp:155
-#: src/TitlesetManager.cpp:176
+#: src/MainWin.cpp:197 src/MenuEditor.cpp:360 src/MenuEditor.cpp:382
+#: src/TitlesetManager.cpp:155 src/TitlesetManager.cpp:176
 msgid "&Add"
 msgstr "&Προσθήκη"
 
@@ -1277,7 +1337,8 @@ msgstr "&Ορισμός φόντου"
 msgid "&Play"
 msgstr "Αναπαραγωγή όλων"
 
-#: src/MainWin.cpp:274 src/MenuEditor.cpp:374 src/TitlesetManager.cpp:184 wxVillaLib/PropDlg.cpp:670
+#: src/MainWin.cpp:274 src/MenuEditor.cpp:374 src/TitlesetManager.cpp:184
+#: wxVillaLib/PropDlg.cpp:670
 msgid "&Delete"
 msgstr "&Διαγραφή"
 
@@ -1323,13 +1384,16 @@ msgstr "Εξερεύνηση αρχείων"
 msgid "Backgrounds"
 msgstr "Φόντο"
 
-#: src/MainWin.cpp:358 src/MainWin.cpp:367 src/MainWin.cpp:530 src/MenuPropDlg.cpp:182
+#: src/MainWin.cpp:358 src/MainWin.cpp:367 src/MainWin.cpp:530
+#: src/MenuPropDlg.cpp:182
 msgid "Buttons"
 msgstr "Κουμπιά"
 
-#: src/MainWin.cpp:522 src/MainWin.cpp:1371 src/MainWin.cpp:1393 src/MenuObject.cpp:266
-#: src/MenuObjectPropDlg.cpp:265 src/MenuObjectPropDlg.cpp:280 buttons/text-circle-v2.xml:13
-#: buttons/text-square-v2.xml:14 buttons/text-underlined-v3.xml:12 buttons/text-v3.xml:13
+#: src/MainWin.cpp:522 src/MainWin.cpp:1371 src/MainWin.cpp:1393
+#: src/MenuObject.cpp:266 src/MenuObjectPropDlg.cpp:265
+#: src/MenuObjectPropDlg.cpp:280 buttons/text-circle-v2.xml:13
+#: buttons/text-square-v2.xml:14 buttons/text-underlined-v3.xml:12
+#: buttons/text-v3.xml:13
 msgid "button"
 msgstr "κουμπί"
 
@@ -1445,7 +1509,8 @@ msgstr ""
 msgid "Audio/Video/Subtitle Files"
 msgstr "Αρχεία Ήχου/Βίντεο/Υπότιτλων"
 
-#: src/MainWin.cpp:1209 src/MenuPropDlg.cpp:154 src/TitlePropDlg.cpp:234 src/TitlePropDlg.cpp:441
+#: src/MainWin.cpp:1209 src/MenuPropDlg.cpp:154 src/TitlePropDlg.cpp:234
+#: src/TitlePropDlg.cpp:441
 msgid "Audio Files"
 msgstr "Αρχεία ήχου"
 
@@ -1644,7 +1709,8 @@ msgstr "Από&κοπή"
 msgid "&Copy"
 msgstr "&Αντιγραφή"
 
-#: src/MenuEditor.cpp:371 src/MenuEditor.cpp:385 src/TitlesetManager.cpp:156 src/TitlesetManager.cpp:181
+#: src/MenuEditor.cpp:371 src/MenuEditor.cpp:385 src/TitlesetManager.cpp:156
+#: src/TitlesetManager.cpp:181
 msgid "&Paste"
 msgstr "&Επικόλληση"
 
@@ -1687,7 +1753,8 @@ msgstr "Εισαγωγή κειμένου"
 msgid "Please choose an image to insert"
 msgstr "Παρακαλώ επιλέξτε μία εικόνα για την εισαγωγή"
 
-#: src/MenuEditor.cpp:546 src/MenuObjectPropDlg.cpp:457 src/MenuPropDlg.cpp:140 src/TitlePropDlg.cpp:424
+#: src/MenuEditor.cpp:546 src/MenuObjectPropDlg.cpp:457
+#: src/MenuPropDlg.cpp:140 src/TitlePropDlg.cpp:424
 msgid "Image Files "
 msgstr "Αρχεία εικόνων "
 
@@ -1732,11 +1799,13 @@ msgstr "Επιλεγμένο"
 msgid "track"
 msgstr "track"
 
-#: src/MenuObjectPropDlg.cpp:176 src/MenuPropDlg.cpp:217 src/TitlePropDlg.cpp:254
+#: src/MenuObjectPropDlg.cpp:176 src/MenuPropDlg.cpp:217
+#: src/TitlePropDlg.cpp:254
 msgid "Audio"
 msgstr "Ήχος"
 
-#: src/MenuObjectPropDlg.cpp:183 src/MenuObjectPropDlg.cpp:200 src/NewProjectDlg.cpp:134
+#: src/MenuObjectPropDlg.cpp:183 src/MenuObjectPropDlg.cpp:200
+#: src/NewProjectDlg.cpp:134
 #, fuzzy
 msgid "Warning"
 msgstr "Εγγραφή"
@@ -1773,7 +1842,8 @@ msgstr "Εμφάνιση"
 msgid "none"
 msgstr "&Κανένα"
 
-#: src/MenuObjectPropDlg.cpp:267 src/MenuPropDlg.cpp:126 src/SettingsDlg.cpp:278 src/VideoPropDlg.cpp:134
+#: src/MenuObjectPropDlg.cpp:267 src/MenuPropDlg.cpp:126
+#: src/SettingsDlg.cpp:278 src/VideoPropDlg.cpp:134
 msgid "auto"
 msgstr "αυτόματο"
 
@@ -1793,8 +1863,8 @@ msgstr "Επιλεγμένο"
 msgid "Font..."
 msgstr "Γραμματοσειρά..."
 
-#: src/MenuObjectPropDlg.cpp:404 src/MenuObjectPropDlg.cpp:566 src/MenuPropDlg.cpp:81
-#: src/VideoPropDlg.cpp:140
+#: src/MenuObjectPropDlg.cpp:404 src/MenuObjectPropDlg.cpp:566
+#: src/MenuPropDlg.cpp:81 src/VideoPropDlg.cpp:140
 msgid "Keep Aspect Ratio"
 msgstr "Aspect ratio"
 
@@ -1830,11 +1900,14 @@ msgstr "Συναντηση"
 msgid "Slice"
 msgstr "Τομή "
 
-#: src/MenuObjectPropDlg.cpp:455 buttons/dotted-frame.xml:25 buttons/ellipse-v2.xml:23
-#: buttons/frame-text.xml:30 buttons/frame-v2.xml:18 buttons/gold-frame.xml:49 buttons/maroon-frame.xml:50
-#: buttons/movie.xml:27 buttons/painting_frame.xml:40 buttons/star-frame.xml:35 buttons/sticky_note.xml:43
-#: objects/ellipse-v3.xml:22 objects/ellipse45.xml:24 objects/frame-v3.xml:18 objects/frame45.xml:20
-#: objects/gold-frame.xml:45 objects/image.xml:3 objects/image.xml:9 objects/sticky_note.xml:42
+#: src/MenuObjectPropDlg.cpp:455 buttons/dotted-frame.xml:25
+#: buttons/ellipse-v2.xml:23 buttons/frame-text.xml:30 buttons/frame-v2.xml:18
+#: buttons/gold-frame.xml:49 buttons/maroon-frame.xml:50 buttons/movie.xml:27
+#: buttons/painting_frame.xml:40 buttons/star-frame.xml:35
+#: buttons/sticky_note.xml:43 objects/ellipse-v3.xml:22
+#: objects/ellipse45.xml:24 objects/frame-v3.xml:18 objects/frame45.xml:20
+#: objects/gold-frame.xml:45 objects/image.xml:3 objects/image.xml:9
+#: objects/sticky_note.xml:42
 msgid "Image"
 msgstr "Εικόνα"
 
@@ -1862,10 +1935,12 @@ msgstr "X:"
 msgid "Y:"
 msgstr "Υ:"
 
-#: src/MenuObjectPropDlg.cpp:551 buttons/arrow-blue.xml:26 buttons/arrow-cool.xml:17
-#: buttons/arrow-double.xml:13 buttons/arrow-gold.xml:26 buttons/arrow-green-double.xml:383
-#: buttons/arrow-green.xml:375 buttons/arrow-red.xml:29 buttons/arrow-simple-v2.xml:43
-#: buttons/arrow-star.xml:21 buttons/arrow.xml:42 buttons/arrow2.xml:25 buttons/arrow3.xml:19
+#: src/MenuObjectPropDlg.cpp:551 buttons/arrow-blue.xml:26
+#: buttons/arrow-cool.xml:17 buttons/arrow-double.xml:13
+#: buttons/arrow-gold.xml:26 buttons/arrow-green-double.xml:383
+#: buttons/arrow-green.xml:375 buttons/arrow-red.xml:29
+#: buttons/arrow-simple-v2.xml:43 buttons/arrow-star.xml:21
+#: buttons/arrow.xml:42 buttons/arrow2.xml:25 buttons/arrow3.xml:19
 #: buttons/gear.xml:86 buttons/star-frame.xml:28 objects/frame45.xml:34
 msgid "Rotation"
 msgstr "Περιστροφή"
@@ -1907,8 +1982,8 @@ msgstr "Παρακαλώ πληκτρολογήστε μία εντολή ενέ
 msgid "Titleset"
 msgstr "Σετ τίτλων"
 
-#: src/MenuPropDlg.cpp:53 src/MenuPropDlg.cpp:206 src/TitlesetManager.cpp:331 src/TitlesetManager.cpp:1220
-#: buttons/pill.xml:26
+#: src/MenuPropDlg.cpp:53 src/MenuPropDlg.cpp:206 src/TitlesetManager.cpp:331
+#: src/TitlesetManager.cpp:1220 buttons/pill.xml:26
 msgid "Menu"
 msgstr "Μενού"
 
@@ -1960,7 +2035,8 @@ msgstr "Υπότιτλος"
 msgid "Angle"
 msgstr "Γωνία"
 
-#: src/MenuPropDlg.cpp:221 src/TitlePropDlg.cpp:71 src/TitlePropDlg.cpp:263 src/TitlesetManager.cpp:331
+#: src/MenuPropDlg.cpp:221 src/TitlePropDlg.cpp:71 src/TitlePropDlg.cpp:263
+#: src/TitlesetManager.cpp:331
 msgid "Title"
 msgstr "Τίτλος"
 
@@ -1996,7 +2072,8 @@ msgstr "Αυτο το αρχειο %s δεν ειναι αρχειο ηχου"
 
 #: src/MenuPropDlg.cpp:309
 msgid "Post commands will not be executed if pause is set to -1"
-msgstr "Μεταγενέστερες εντολές δεν θα εκτελεστούν αν η παύση έχει οριστεί σε -1"
+msgstr ""
+"Μεταγενέστερες εντολές δεν θα εκτελεστούν αν η παύση έχει οριστεί σε -1"
 
 #: src/MessageDlg.cpp:76
 msgid "&Don't show this message again"
@@ -2027,8 +2104,8 @@ msgstr "Χωρητικότητα δίσκου:"
 msgid "Video bitrate:"
 msgstr "Βίντεο bitrate:"
 
-#: src/NewProjectDlg.cpp:65 src/NewProjectDlg.cpp:71 src/SettingsDlg.cpp:249 src/SettingsDlg.cpp:254
-#: src/SettingsDlg.cpp:258
+#: src/NewProjectDlg.cpp:65 src/NewProjectDlg.cpp:71 src/SettingsDlg.cpp:249
+#: src/SettingsDlg.cpp:254 src/SettingsDlg.cpp:258
 msgid "KBit/s"
 msgstr "KBit/s"
 
@@ -2089,8 +2166,9 @@ msgstr "Εγγραφή"
 msgid "Please insert a blank or rewritable DVD into the device %s."
 msgstr "Παρακαλώ εισάγετε ένα άδειο ή επανεγγράψιμο DVD στην συσκευή %s."
 
-#: src/ProcessBurn.cpp:69 src/ProcessBurn.cpp:87 src/ProcessBurn.cpp:129 src/ProcessFormatDvd.cpp:45
-#: src/ProcessPreview.cpp:88 src/ProgressDlg.cpp:291
+#: src/ProcessBurn.cpp:69 src/ProcessBurn.cpp:87 src/ProcessBurn.cpp:129
+#: src/ProcessFormatDvd.cpp:45 src/ProcessPreview.cpp:88
+#: src/ProgressDlg.cpp:291
 msgid "Aborted"
 msgstr "Ακύρωση"
 
@@ -2119,7 +2197,9 @@ msgstr "Προσθήκη ECC πληροφοριών"
 #: src/ProcessEncode.cpp:39 src/ProcessSubtitles.cpp:32
 #, c-format
 msgid "Found transcoded file in cache for '%s'"
-msgstr "Βρέθηκε διακωδικοποιημένο αρχείο στον χώρο προσωρινής αποθήκευσης αρχείων για '%s'"
+msgstr ""
+"Βρέθηκε διακωδικοποιημένο αρχείο στον χώρο προσωρινής αποθήκευσης αρχείων "
+"για '%s'"
 
 #: src/ProcessEncode.cpp:78
 #, fuzzy, c-format
@@ -2146,7 +2226,8 @@ msgstr "-> Προσπέρασμένο <-"
 #: src/ProcessIsoImage.cpp:54
 msgid "There is not enough space to store ISO: cache emptying."
 msgstr ""
-"Δεν υπάρχει αρκετός χώρος για την αποθήκευση του αρχείου ISO. άδειασμα του χώρου προσωρινής αποθήκευσης"
+"Δεν υπάρχει αρκετός χώρος για την αποθήκευση του αρχείου ISO. άδειασμα του "
+"χώρου προσωρινής αποθήκευσης"
 
 #: src/ProcessIsoImage.cpp:57
 msgid "Creating ISO image"
@@ -2161,8 +2242,8 @@ msgstr "Δημιουργία μενού %u από %lu"
 msgid "Create menu MPEG"
 msgstr "Δημιουργία μενού mpeg"
 
-#: src/ProcessMenu.cpp:150 src/ProcessMenu.cpp:174 src/ProcessMenu.cpp:188 src/ProcessMenu.cpp:249
-#: src/ProcessMenu.cpp:279 src/ProcessMenu.cpp:293
+#: src/ProcessMenu.cpp:150 src/ProcessMenu.cpp:174 src/ProcessMenu.cpp:188
+#: src/ProcessMenu.cpp:249 src/ProcessMenu.cpp:279 src/ProcessMenu.cpp:293
 msgid "Error creation of menu"
 msgstr "Λάθος κατά τη δημιουργία του μενού"
 
@@ -2180,13 +2261,16 @@ msgstr "Δημιουργία μενού %d από %d"
 msgid "Transcode audio from"
 msgstr "Transcode αρχείο βίντεο:"
 
-#: src/ProcessMenu.cpp:211 src/ProcessMenu.cpp:217 src/ProcessMenuTransitions.cpp:126
-#: src/ProcessMenuTransitions.cpp:136 src/ProcessSlideshow.cpp:198 src/ProcessTranscode.cpp:189
-#: src/ProcessTranscode.cpp:200 src/ProcessTranscode.cpp:226 src/ProcessTranscode.cpp:238
+#: src/ProcessMenu.cpp:211 src/ProcessMenu.cpp:217
+#: src/ProcessMenuTransitions.cpp:126 src/ProcessMenuTransitions.cpp:136
+#: src/ProcessSlideshow.cpp:198 src/ProcessTranscode.cpp:189
+#: src/ProcessTranscode.cpp:200 src/ProcessTranscode.cpp:226
+#: src/ProcessTranscode.cpp:238
 msgid "Error transcoding of "
 msgstr "Λάθος κατά τη δημιουργία του μενού"
 
-#: src/ProcessMenu.cpp:222 src/ProcessMenu.cpp:302 src/ProcessSlideshow.cpp:203
+#: src/ProcessMenu.cpp:222 src/ProcessMenu.cpp:302
+#: src/ProcessSlideshow.cpp:203
 msgid "Multiplexing audio and video"
 msgstr "Ένωση ήχου και βίντεο"
 
@@ -2208,8 +2292,8 @@ msgstr "Ένωση υπότιτλων στο mpeg"
 msgid "Can't rename file '%s' in '%s'"
 msgstr "Δεν μπορεί να γίνει μετονομασια του αρχείου '%s' σε  '%s'"
 
-#: src/ProcessMenuTransitions.cpp:104 src/ProcessMenuTransitions.cpp:161 src/ProcessMenuTransitions.cpp:242
-#: src/ProcessMenuTransitions.cpp:254
+#: src/ProcessMenuTransitions.cpp:104 src/ProcessMenuTransitions.cpp:161
+#: src/ProcessMenuTransitions.cpp:242 src/ProcessMenuTransitions.cpp:254
 msgid "Error creation of transition"
 msgstr "Λάθος κατά τη δημιουργία της μετάβασης"
 
@@ -2222,23 +2306,27 @@ msgstr "Δημιουργήστε μετάβαση από %s"
 msgid "Start preview"
 msgstr "Έναρξη προεπισκόπησης"
 
-#: src/ProcessPreview.cpp:42 src/ProcessPreview.cpp:58 src/ProcessPreview.cpp:79
+#: src/ProcessPreview.cpp:42 src/ProcessPreview.cpp:58
+#: src/ProcessPreview.cpp:79
 #, fuzzy
 msgid ""
-"Starting of selected DVD player is failed. Please open the following directory with your favorite DVD "
-"player: "
+"Starting of selected DVD player is failed. Please open the following "
+"directory with your favorite DVD player: "
 msgstr ""
-"Συγγνώμη αλλά δεν έχουν οριστεί dvd players στις ρυθμίσεις του DVDStyler. Παρακαλώ ορίστε τη διαδρομή για "
-"ένα dvd player στην εντολή 'Ρυθμίσεις/Πυρήνας/Εντολή προεπισκόπησης' ή άνοιξε τον ακόλουθο φάκελο με τον "
-"dvd player σου: "
+"Συγγνώμη αλλά δεν έχουν οριστεί dvd players στις ρυθμίσεις του DVDStyler. "
+"Παρακαλώ ορίστε τη διαδρομή για ένα dvd player στην εντολή "
+"'Ρυθμίσεις/Πυρήνας/Εντολή προεπισκόπησης' ή άνοιξε τον ακόλουθο φάκελο με "
+"τον dvd player σου: "
 
 #: src/ProcessPreview.cpp:49
 msgid ""
-"VLC player is not found. Please install VLC player (http://www.videolan.org) in Applications directory or "
-"open the following directory with your favorite DVD player: "
+"VLC player is not found. Please install VLC player (http://www.videolan.org)"
+" in Applications directory or open the following directory with your "
+"favorite DVD player: "
 msgstr ""
-"VLC player δεν βρέθηκε. Παρακαλείσθε να εγκαταστήσετε το VLC player (http://www.videolan.org) στον κατάλογο "
-"εφαρμογών ή ανοίξτε τον ακόλουθο κατάλογο με τον αγαπημένο σας DVD player:"
+"VLC player δεν βρέθηκε. Παρακαλείσθε να εγκαταστήσετε το VLC player "
+"(http://www.videolan.org) στον κατάλογο εφαρμογών ή ανοίξτε τον ακόλουθο "
+"κατάλογο με τον αγαπημένο σας DVD player:"
 
 #: src/ProcessPreview.cpp:86
 msgid "Do you want to burn this video to DVD?"
@@ -2253,7 +2341,8 @@ msgstr "Θέλετε να κάνετε εγγραφή σε αρχείο iso αυ
 msgid "Generating slideshow %u of %lu"
 msgstr "Δημιουργία slideshow %u από %lu"
 
-#: src/ProcessSlideshow.cpp:102 src/ProcessSlideshow.cpp:130 src/ProcessSlideshow.cpp:153
+#: src/ProcessSlideshow.cpp:102 src/ProcessSlideshow.cpp:130
+#: src/ProcessSlideshow.cpp:153
 msgid "Error creation of slideshow"
 msgstr "Λάθος κατά τη δημιουργία του slideshow"
 
@@ -2297,7 +2386,8 @@ msgstr "Ένωση ήχου και βίντεο"
 msgid "Analysis of audio track %d"
 msgstr "Ανάλυση του αρχείο ήχου %d "
 
-#: src/ProcessTranscode.cpp:286 src/ProcessTranscode.cpp:300 wxVillaLib/ProgramProcess.cpp:84
+#: src/ProcessTranscode.cpp:286 src/ProcessTranscode.cpp:300
+#: wxVillaLib/ProgramProcess.cpp:84
 #, c-format
 msgid "Execution of '%s' failed."
 msgstr "Η εκτέλεση του '%s' απέτυχε."
@@ -2363,7 +2453,8 @@ msgstr "Η εγγραφή ήταν επιτυχής."
 msgid "Generating was successful."
 msgstr "Η δημιουργία ήταν επιτυχής."
 
-#: src/SettingsDlg.cpp:45 src/SettingsDlg.cpp:417 src/SettingsDlg.cpp:423 buttons/settings.xml:3
+#: src/SettingsDlg.cpp:45 src/SettingsDlg.cpp:417 src/SettingsDlg.cpp:423
+#: buttons/settings.xml:3
 msgid "Settings"
 msgstr "Ρυθμίσεις"
 
@@ -2571,7 +2662,8 @@ msgstr "Μην διαγράψεις τα προσωρινά αρχεία"
 
 #: src/SettingsDlg.cpp:342
 msgid "Language change will not take effect until DVDStyler is restarted"
-msgstr "Η αλλαγή της γλώσσας δεν θα εφαρμοστεί μέχρι το DVDStyler να ξεκινήσει ξανά"
+msgstr ""
+"Η αλλαγή της γλώσσας δεν θα εφαρμοστεί μέχρι το DVDStyler να ξεκινήσει ξανά"
 
 #: src/SettingsDlg.cpp:417
 msgid "All \"don't show again\" flags are reseted."
@@ -2854,12 +2946,20 @@ msgid "File '%s' doesn't contain any audio or video streams."
 msgstr "Το αρχειο '%s' δεν περιεχει ηχητικα η βιντεο streams."
 
 #: src/TitlesetManager.cpp:572
-msgid "This file contains video in PAL format. Do you want to change DVD format to PAL too?"
-msgstr "Ο τυπος αυτου του αρχειου ειναι PAL. Θελετε να αλλαχθει ο τυπος του DVD σε PAL?"
+msgid ""
+"This file contains video in PAL format. Do you want to change DVD format to "
+"PAL too?"
+msgstr ""
+"Ο τυπος αυτου του αρχειου ειναι PAL. Θελετε να αλλαχθει ο τυπος του DVD σε "
+"PAL?"
 
 #: src/TitlesetManager.cpp:576
-msgid "This file contains video in NTSC format. Do you want to change DVD format to NTSC too?"
-msgstr "Ο τυπος αυτου του αρχειου ειναι NTSC. Θελετε να αλλαχθει ο τυπος του DVD σε NTSC?"
+msgid ""
+"This file contains video in NTSC format. Do you want to change DVD format to"
+" NTSC too?"
+msgstr ""
+"Ο τυπος αυτου του αρχειου ειναι NTSC. Θελετε να αλλαχθει ο τυπος του DVD σε "
+"NTSC?"
 
 #: src/TitlesetManager.cpp:582
 msgid "Maximal 99 titles are allowed for one titleset."
@@ -2867,9 +2967,11 @@ msgstr "Ενα σετ τιτλων μπορει να περιεχει το πο�
 
 #: src/TitlesetManager.cpp:712
 msgid ""
-"The video bitrate is reduced below 2 Mb/s to fit your video on DVD. This can produce DVD with bad video "
-"quality."
-msgstr "Το bitrate μειωθηκε στα 2 Mb/s για να χωρεσει στο DVD. Μπορει να δημιουργηθει DVD κακης ποιοτητας."
+"The video bitrate is reduced below 2 Mb/s to fit your video on DVD. This can"
+" produce DVD with bad video quality."
+msgstr ""
+"Το bitrate μειωθηκε στα 2 Mb/s για να χωρεσει στο DVD. Μπορει να "
+"δημιουργηθει DVD κακης ποιοτητας."
 
 #: src/TitlesetManager.cpp:725 src/TitlesetManager.cpp:762
 msgid "Please add a video track first."
@@ -2990,7 +3092,8 @@ msgstr "Πλοηγηση..."
 
 #: wxVillaLib/imagjpg.cpp:255
 msgid "JPEG: Couldn't load - file is probably corrupted."
-msgstr "JPEG: Δεν μπορεί να γίνει φόρτωμα του αρχείου. Πιθανών είναι κατεστραμένο."
+msgstr ""
+"JPEG: Δεν μπορεί να γίνει φόρτωμα του αρχείου. Πιθανών είναι κατεστραμένο."
 
 #: wxVillaLib/imagjpg.cpp:427
 msgid "JPEG: Couldn't save image."
@@ -3008,7 +3111,8 @@ msgstr "Δεν βρέθηκε χειριστήριο εικόνας για το�
 #: wxVillaLib/imagjpg.cpp:537
 #, c-format
 msgid "Can't load image from file '%s': file does not exist."
-msgstr "Δεν μπορεί να φορτωθεί εικόνα από το αρχείο '%s': Το αρχείο δεν υπάρχει."
+msgstr ""
+"Δεν μπορεί να φορτωθεί εικόνα από το αρχείο '%s': Το αρχείο δεν υπάρχει."
 
 #: wxVillaLib/PropDlg.cpp:223
 msgid "&Don't show this dialog again"
@@ -3022,17 +3126,20 @@ msgstr "Κυκλικό βέλος 3D"
 msgid "Colour of the circle"
 msgstr "Χρώμα κύκλου"
 
-#: buttons/arrow-blue.xml:40 buttons/arrow-red.xml:43 buttons/arrow-simple-v2.xml:19
-#: buttons/arrow-text-left.xml:32 buttons/arrow-text-right.xml:33 buttons/arrow3d-left.xml:29
-#: buttons/arrow3d-right.xml:29 buttons/gear.xml:105 buttons/gold-frame.xml:70 buttons/home-moon.xml:36
-#: buttons/pill-opacity.xml:77 buttons/pill-stroke.xml:86
+#: buttons/arrow-blue.xml:40 buttons/arrow-red.xml:43
+#: buttons/arrow-simple-v2.xml:19 buttons/arrow-text-left.xml:32
+#: buttons/arrow-text-right.xml:33 buttons/arrow3d-left.xml:29
+#: buttons/arrow3d-right.xml:29 buttons/gear.xml:105 buttons/gold-frame.xml:70
+#: buttons/home-moon.xml:36 buttons/pill-opacity.xml:77
+#: buttons/pill-stroke.xml:86
 msgid "Stroke color"
 msgstr "Χρώμα περιγράμματος"
 
-#: buttons/arrow-blue.xml:47 buttons/arrow-cool.xml:38 buttons/arrow-gold.xml:33
-#: buttons/arrow-mirror-left.xml:19 buttons/arrow-mirror-right.xml:19 buttons/arrow-red.xml:50
-#: buttons/arrow-simple-v2.xml:31 buttons/arrow-text-left.xml:25 buttons/arrow-text-right.xml:26
-#: buttons/glow_arrow.xml:33
+#: buttons/arrow-blue.xml:47 buttons/arrow-cool.xml:38
+#: buttons/arrow-gold.xml:33 buttons/arrow-mirror-left.xml:19
+#: buttons/arrow-mirror-right.xml:19 buttons/arrow-red.xml:50
+#: buttons/arrow-simple-v2.xml:31 buttons/arrow-text-left.xml:25
+#: buttons/arrow-text-right.xml:26 buttons/glow_arrow.xml:33
 msgid "Arrow color"
 msgstr "Χρώμα βέλους"
 
@@ -3080,7 +3187,8 @@ msgstr "Χρώμα βέλους"
 msgid "Green Arrow"
 msgstr "Κυκλικό βέλος"
 
-#: buttons/arrow-green.xml:382 buttons/arrow.xml:11 buttons/arrow2.xml:60 buttons/arrow3.xml:40
+#: buttons/arrow-green.xml:382 buttons/arrow.xml:11 buttons/arrow2.xml:60
+#: buttons/arrow3.xml:40
 msgid "Arrow colour"
 msgstr "Χρώμα βέλους"
 
@@ -3104,7 +3212,8 @@ msgstr "Κειμενο δεξια"
 msgid "Red Arrow"
 msgstr "Κοκκινο Βέλος"
 
-#: buttons/arrow-red.xml:36 buttons/pill-opacity.xml:24 buttons/pill-stroke.xml:26 buttons/pill3.xml:22
+#: buttons/arrow-red.xml:36 buttons/pill-opacity.xml:24
+#: buttons/pill-stroke.xml:26 buttons/pill3.xml:22
 msgid "Button color"
 msgstr "Χρώμα εξωτερικού περιγράμματος"
 
@@ -3112,13 +3221,16 @@ msgstr "Χρώμα εξωτερικού περιγράμματος"
 msgid "Simple Arrow"
 msgstr "Κυκλικό βέλος 3D"
 
-#: buttons/arrow-simple-v2.xml:50 buttons/arrow3d-left.xml:41 buttons/arrow3d-right.xml:41
-#: buttons/dotted-frame.xml:100 buttons/ellipse-v2.xml:44 buttons/frame-text.xml:63 buttons/frame-text.xml:83
-#: buttons/frame-v2.xml:53 buttons/gear.xml:119 buttons/home-moon.xml:62 buttons/home-v2.xml:35
-#: buttons/settings.xml:30 buttons/star-frame.xml:70 buttons/text-circle-v2.xml:32
-#: buttons/text-square-v2.xml:33 buttons/text-underlined-v3.xml:32 buttons/text-v3.xml:58
-#: objects/ellipse-v3.xml:57 objects/ellipse45.xml:59 objects/frame-v3.xml:67 objects/frame45.xml:76
-#: objects/rectangle-v2.xml:38 objects/text-v2.xml:53
+#: buttons/arrow-simple-v2.xml:50 buttons/arrow3d-left.xml:41
+#: buttons/arrow3d-right.xml:41 buttons/dotted-frame.xml:100
+#: buttons/ellipse-v2.xml:44 buttons/frame-text.xml:63
+#: buttons/frame-text.xml:83 buttons/frame-v2.xml:53 buttons/gear.xml:119
+#: buttons/home-moon.xml:62 buttons/home-v2.xml:35 buttons/settings.xml:30
+#: buttons/star-frame.xml:70 buttons/text-circle-v2.xml:32
+#: buttons/text-square-v2.xml:33 buttons/text-underlined-v3.xml:32
+#: buttons/text-v3.xml:58 objects/ellipse-v3.xml:57 objects/ellipse45.xml:59
+#: objects/frame-v3.xml:67 objects/frame45.xml:76 objects/rectangle-v2.xml:38
+#: objects/text-v2.xml:53
 msgid "Shadow"
 msgstr "&Σκια"
 
@@ -3138,8 +3250,9 @@ msgstr "Χρώμα τριγώνου"
 msgid "Text Arrow Left"
 msgstr "Κείμενο Αριστερά "
 
-#: buttons/arrow-text-left.xml:18 buttons/arrow-text-right.xml:19 buttons/pill-opacity.xml:70
-#: buttons/pill-stroke.xml:79 buttons/pill2.xml:42 buttons/pill3.xml:35
+#: buttons/arrow-text-left.xml:18 buttons/arrow-text-right.xml:19
+#: buttons/pill-opacity.xml:70 buttons/pill-stroke.xml:79 buttons/pill2.xml:42
+#: buttons/pill3.xml:35
 msgid "Text color"
 msgstr "Χρώμα κειμένου"
 
@@ -3151,14 +3264,16 @@ msgstr "Κείμενο Δεξί βέλος"
 msgid "Arrow"
 msgstr "Βέλος"
 
-#: buttons/arrow.xml:23 buttons/cancel.xml:28 buttons/circle-outline.xml:36 buttons/circle.xml:28
-#: buttons/ellipse-v2.xml:51 buttons/ok.xml:27 objects/ellipse-v3.xml:43 objects/ellipse45.xml:45
-#: objects/frame-v3.xml:53 objects/frame45.xml:62 objects/text-v2.xml:32
+#: buttons/arrow.xml:23 buttons/cancel.xml:28 buttons/circle-outline.xml:36
+#: buttons/circle.xml:28 buttons/ellipse-v2.xml:51 buttons/ok.xml:27
+#: objects/ellipse-v3.xml:43 objects/ellipse45.xml:45 objects/frame-v3.xml:53
+#: objects/frame45.xml:62 objects/text-v2.xml:32
 msgid "Outline colour"
 msgstr "Χρώμα εξωτερικού περιγράμματος"
 
-#: buttons/arrow.xml:35 buttons/circle-outline.xml:48 buttons/circle.xml:35 buttons/ellipse-v2.xml:37
-#: objects/ellipse-v3.xml:36 objects/ellipse45.xml:38 objects/frame-v3.xml:46 objects/frame45.xml:55
+#: buttons/arrow.xml:35 buttons/circle-outline.xml:48 buttons/circle.xml:35
+#: buttons/ellipse-v2.xml:37 objects/ellipse-v3.xml:36
+#: objects/ellipse45.xml:38 objects/frame-v3.xml:46 objects/frame45.xml:55
 #: objects/text-v2.xml:39
 msgid "Outline width"
 msgstr "Πλάτος εξωτερικού περιγράμματος"
@@ -3224,12 +3339,14 @@ msgstr "Χρώμα γεμίσματος"
 msgid "01"
 msgstr ""
 
-#: buttons/circle-outline.xml:22 buttons/circle.xml:21 buttons/text-circle-v2.xml:39
+#: buttons/circle-outline.xml:22 buttons/circle.xml:21
+#: buttons/text-circle-v2.xml:39
 msgid "Circle colour"
 msgstr "Χρώμα γεμίσματος"
 
-#: buttons/circle-outline.xml:29 buttons/circle.xml:42 buttons/frame-text.xml:76 buttons/pill.xml:50
-#: buttons/text-circle-v2.xml:25 buttons/text-square-v2.xml:26 buttons/text-underlined-v3.xml:25
+#: buttons/circle-outline.xml:29 buttons/circle.xml:42
+#: buttons/frame-text.xml:76 buttons/pill.xml:50 buttons/text-circle-v2.xml:25
+#: buttons/text-square-v2.xml:26 buttons/text-underlined-v3.xml:25
 #: buttons/text-v3.xml:25
 msgid "Text colour"
 msgstr "Χρώμα κειμένου"
@@ -3244,30 +3361,36 @@ msgstr "Κυκλικό βέλος"
 msgid "Dotted frame"
 msgstr "Χρυσό καρέ"
 
-#: buttons/dotted-frame.xml:32 buttons/ellipse-v2.xml:30 buttons/frame-v2.xml:25 buttons/gold-frame.xml:56
-#: buttons/maroon-frame.xml:57 buttons/movie.xml:34 buttons/star-frame.xml:42 objects/ellipse-v3.xml:29
-#: objects/ellipse45.xml:31 objects/frame-v3.xml:25 objects/frame45.xml:27
+#: buttons/dotted-frame.xml:32 buttons/ellipse-v2.xml:30
+#: buttons/frame-v2.xml:25 buttons/gold-frame.xml:56
+#: buttons/maroon-frame.xml:57 buttons/movie.xml:34 buttons/star-frame.xml:42
+#: objects/ellipse-v3.xml:29 objects/ellipse45.xml:31 objects/frame-v3.xml:25
+#: objects/frame45.xml:27
 msgid "Image opacity"
 msgstr "Διαφάνεια εικόνας"
 
-#: buttons/dotted-frame.xml:39 buttons/frame-text.xml:51 buttons/frame-v2.xml:60 buttons/movie.xml:41
-#: buttons/pill-opacity.xml:31 buttons/pill-stroke.xml:33 buttons/star-frame.xml:49
+#: buttons/dotted-frame.xml:39 buttons/frame-text.xml:51
+#: buttons/frame-v2.xml:60 buttons/movie.xml:41 buttons/pill-opacity.xml:31
+#: buttons/pill-stroke.xml:33 buttons/star-frame.xml:49
 msgid "Border colour"
 msgstr "Χρώμα περιγράμματος"
 
-#: buttons/dotted-frame.xml:46 buttons/frame-text.xml:37 buttons/frame-v2.xml:46 buttons/pill-opacity.xml:38
+#: buttons/dotted-frame.xml:46 buttons/frame-text.xml:37
+#: buttons/frame-v2.xml:46 buttons/pill-opacity.xml:38
 #: buttons/pill-stroke.xml:40 buttons/star-frame.xml:56
 msgid "Border width"
 msgstr "Πάχος περιγράμματος"
 
-#: buttons/dotted-frame.xml:53 buttons/frame-text.xml:44 buttons/pill-opacity.xml:45
-#: buttons/pill-stroke.xml:47
+#: buttons/dotted-frame.xml:53 buttons/frame-text.xml:44
+#: buttons/pill-opacity.xml:45 buttons/pill-stroke.xml:47
 msgid "Corner round"
 msgstr ""
 
-#: buttons/dotted-frame.xml:60 buttons/ellipse-v2.xml:63 buttons/frame-v2.xml:72 buttons/gold-frame.xml:77
-#: buttons/maroon-frame.xml:85 buttons/star-frame.xml:63 objects/ellipse-v3.xml:50 objects/ellipse45.xml:52
-#: objects/frame-v3.xml:60 objects/frame45.xml:69
+#: buttons/dotted-frame.xml:60 buttons/ellipse-v2.xml:63
+#: buttons/frame-v2.xml:72 buttons/gold-frame.xml:77
+#: buttons/maroon-frame.xml:85 buttons/star-frame.xml:63
+#: objects/ellipse-v3.xml:50 objects/ellipse45.xml:52 objects/frame-v3.xml:60
+#: objects/frame45.xml:69
 msgid "Inner colour"
 msgstr "Εσωτερικό χρώμα"
 
@@ -3292,7 +3415,8 @@ msgstr "Έλλειψη"
 msgid "Frame and Text"
 msgstr ""
 
-#: buttons/frame-text.xml:90 buttons/pill-opacity.xml:91 buttons/pill-stroke.xml:100
+#: buttons/frame-text.xml:90 buttons/pill-opacity.xml:91
+#: buttons/pill-stroke.xml:100
 #, fuzzy
 msgid "Text offset"
 msgstr "Κείμενο Αριστερά "
@@ -3301,13 +3425,13 @@ msgstr "Κείμενο Αριστερά "
 msgid "Frame"
 msgstr "Καρέ"
 
-#: buttons/frame-v2.xml:32 buttons/text-v3.xml:44 objects/frame-v3.xml:32 objects/frame45.xml:41
-#: objects/rectangle-v2.xml:17
+#: buttons/frame-v2.xml:32 buttons/text-v3.xml:44 objects/frame-v3.xml:32
+#: objects/frame45.xml:41 objects/rectangle-v2.xml:17
 msgid "Rx"
 msgstr "Rx"
 
-#: buttons/frame-v2.xml:39 buttons/text-v3.xml:51 objects/frame-v3.xml:39 objects/frame45.xml:48
-#: objects/rectangle-v2.xml:24
+#: buttons/frame-v2.xml:39 buttons/text-v3.xml:51 objects/frame-v3.xml:39
+#: objects/frame45.xml:48 objects/rectangle-v2.xml:24
 msgid "Ry"
 msgstr "Ry"
 
@@ -3315,7 +3439,8 @@ msgstr "Ry"
 msgid "Gear"
 msgstr ""
 
-#: buttons/gear.xml:112 buttons/home-moon.xml:43 buttons/pill-opacity.xml:84 buttons/pill-stroke.xml:93
+#: buttons/gear.xml:112 buttons/home-moon.xml:43 buttons/pill-opacity.xml:84
+#: buttons/pill-stroke.xml:93
 #, fuzzy
 msgid "Stroke width"
 msgstr "Πάχος περιγράμματος"
@@ -3338,18 +3463,21 @@ msgstr "Χρώμα βέλους"
 msgid "Gold frame"
 msgstr "Χρυσό καρέ"
 
-#: buttons/gold-frame.xml:63 buttons/maroon-frame.xml:64 buttons/painting_frame.xml:47
+#: buttons/gold-frame.xml:63 buttons/maroon-frame.xml:64
+#: buttons/painting_frame.xml:47
 #, fuzzy
 msgid "Frame colour"
 msgstr "Χρώμα γεμίσματος"
 
-#: buttons/gold-frame.xml:84 buttons/maroon-frame.xml:92 buttons/pill-opacity.xml:52
-#: buttons/pill-stroke.xml:54 buttons/star-frame.xml:77 buttons/sticky_note.xml:64
+#: buttons/gold-frame.xml:84 buttons/maroon-frame.xml:92
+#: buttons/pill-opacity.xml:52 buttons/pill-stroke.xml:54
+#: buttons/star-frame.xml:77 buttons/sticky_note.xml:64
 #, fuzzy
 msgid "Selection colour"
 msgstr "Χρώμα δαχτυλιδιού"
 
-#: buttons/gold-frame.xml:96 buttons/pill-stroke.xml:66 buttons/sticky_note.xml:76
+#: buttons/gold-frame.xml:96 buttons/pill-stroke.xml:66
+#: buttons/sticky_note.xml:76
 #, fuzzy
 msgid "Selection width"
 msgstr "Επιλογη τιτλου"
@@ -3611,11 +3739,13 @@ msgstr "Σκούπισμα από πάνω προς τα κάτω"
 #~ msgstr "Χρώμα:"
 
 #~ msgid ""
-#~ "Unfortunately there is no DVD player specified in the DVDStyler settings. Please set the path to the DVD "
-#~ "player in the 'Settings/Core/Preview command' or open the following directory with your DVD player: "
+#~ "Unfortunately there is no DVD player specified in the DVDStyler settings. "
+#~ "Please set the path to the DVD player in the 'Settings/Core/Preview command'"
+#~ " or open the following directory with your DVD player: "
 #~ msgstr ""
-#~ "Συγγνώμη αλλά δεν έχουν οριστεί dvd players στις ρυθμίσεις του DVDStyler. Παρακαλώ ορίστε τη διαδρομή "
-#~ "για ένα dvd player στην εντολή 'Ρυθμίσεις/Πυρήνας/Εντολή προεπισκόπησης' ή άνοιξε τον ακόλουθο φάκελο με "
+#~ "Συγγνώμη αλλά δεν έχουν οριστεί dvd players στις ρυθμίσεις του DVDStyler. "
+#~ "Παρακαλώ ορίστε τη διαδρομή για ένα dvd player στην εντολή "
+#~ "'Ρυθμίσεις/Πυρήνας/Εντολή προεπισκόπησης' ή άνοιξε τον ακόλουθο φάκελο με "
 #~ "τον dvd player σου: "
 
 #~ msgid "Preview command:"

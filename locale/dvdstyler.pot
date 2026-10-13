@@ -74,8 +74,8 @@ msgstr ""
 #: src/About.cpp:93
 #, c-format
 msgid ""
-"Please use %sSourceforge Bugtracing system%s to report bug and %sSourceforge "
-"RFE system%s to submit a new feature request."
+"Please use the %sGitHub issue tracker%s to report bugs or submit feature "
+"requests."
 msgstr ""
 
 #: src/About.cpp:98

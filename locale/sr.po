@@ -1,3 +1,4 @@
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: DVDStyler 1.7.4\n"
@@ -41,7 +42,8 @@ msgid "Copyright: "
 msgstr "Copyright: "
 
 #: src/About.cpp:73
-msgid "DVDStyler is a crossplatform authoring system for Video DVD production."
+msgid ""
+"DVDStyler is a crossplatform authoring system for Video DVD production."
 msgstr "DVDStyler je program za autoriranje DVD-a."
 
 #: src/About.cpp:85
@@ -50,7 +52,9 @@ msgstr "Forum"
 
 #: src/About.cpp:86
 #, c-format
-msgid "Please use %sDVDStyler forum%s to get support, ask questions, or discuss this software."
+msgid ""
+"Please use %sDVDStyler forum%s to get support, ask questions, or discuss "
+"this software."
 msgstr ""
 
 #: src/About.cpp:88
@@ -60,8 +64,8 @@ msgstr "WIKI"
 #: src/About.cpp:89
 #, c-format
 msgid ""
-"Some documentation and %sFAQ%s you can find in %sDVDStyler WIKI%s or you can publish there your comments or "
-"small guides."
+"Some documentation and %sFAQ%s you can find in %sDVDStyler WIKI%s or you can"
+" publish there your comments or small guides."
 msgstr ""
 
 #: src/About.cpp:92
@@ -71,9 +75,11 @@ msgstr ""
 #: src/About.cpp:93
 #, c-format
 msgid ""
-"Please use %sSourceforge Bugtracing system%s to report bug and %sSourceforge RFE system%s to submit a new "
-"feature request."
+"Please use the %sGitHub issue tracker%s to report bugs or submit feature "
+"requests."
 msgstr ""
+"Molimo vas da koristite %sGitHub issue tracker%s za prijavu grešaka ili "
+"podnošenje zahteva za nove funkcije."
 
 #: src/About.cpp:98
 msgid "Support"
@@ -105,27 +111,32 @@ msgstr "Autori"
 
 #: src/About.cpp:143
 msgid ""
-"DVDStyler is <a href='http://www.gnu.org/philosophy/free-sw.html'>free software</a> distributed under <a "
-"href='http://www.gnu.org/copyleft/gpl.html'>GNU General Public License (GPL)</a>. Please visit those sites "
-"for details of each agreement."
+"DVDStyler is <a href='http://www.gnu.org/philosophy/free-sw.html'>free "
+"software</a> distributed under <a "
+"href='http://www.gnu.org/copyleft/gpl.html'>GNU General Public License "
+"(GPL)</a>. Please visit those sites for details of each agreement."
 msgstr ""
-"DVDStyler je <a href='http://www.gnu.org/philosophy/free-sw.html'>besplatan program</a> dat po <a "
-"href='http://www.gnu.org/copyleft/gpl.html'>GNU General Public Licencu (GPL)</a>. Proveriti sajtove za "
-"detalje licence."
+"DVDStyler je <a href='http://www.gnu.org/philosophy/free-sw.html'>besplatan "
+"program</a> dat po <a href='http://www.gnu.org/copyleft/gpl.html'>GNU "
+"General Public Licencu (GPL)</a>. Proveriti sajtove za detalje licence."
 
 #: src/About.cpp:148
 msgid ""
-"THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT "
-"LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO "
-"EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER "
-"IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE "
-"USE OR OTHER DEALINGS IN THE SOFTWARE."
+"THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR"
+" IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, "
+"FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE "
+"AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER "
+"LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING "
+"FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS"
+" IN THE SOFTWARE."
 msgstr ""
-"THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT "
-"LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO "
-"EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER "
-"IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE "
-"USE OR OTHER DEALINGS IN THE SOFTWARE."
+"THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR"
+" IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, "
+"FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE "
+"AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER "
+"LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING "
+"FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS"
+" IN THE SOFTWARE."
 
 #: src/About.cpp:157
 msgid "Licence"
@@ -185,8 +196,8 @@ msgstr "Osobine"
 msgid "File Name:"
 msgstr ""
 
-#: src/AudioPropDlg.cpp:87 src/TitlePropDlg.cpp:196 src/VideoFrameDlg.cpp:77 src/VideoPropDlg.cpp:114
-#: src/VobListBox.cpp:109
+#: src/AudioPropDlg.cpp:87 src/TitlePropDlg.cpp:196 src/VideoFrameDlg.cpp:77
+#: src/VideoPropDlg.cpp:114 src/VobListBox.cpp:109
 msgid "Duration:"
 msgstr "Caption:"
 
@@ -265,16 +276,21 @@ msgstr ""
 msgid "Analysis of audio"
 msgstr ""
 
-#: src/AudioPropDlg.cpp:395 src/MainWin.cpp:872 src/SysUtils.cpp:303 src/VobListBox.cpp:655
+#: src/AudioPropDlg.cpp:395 src/MainWin.cpp:872 src/SysUtils.cpp:303
+#: src/VobListBox.cpp:655
 msgid "Please wait..."
 msgstr "Sačekati..."
 
-#: src/BurnDlg.cpp:104 src/BurnDlg.cpp:459 src/BurnDlg.cpp:466 src/BurnDlg.cpp:588 src/BurnDlg.cpp:595
-#: src/BurnDlg.cpp:601 src/BurnDlg.cpp:608 src/BurnDlg.cpp:615 src/BurnDlg.cpp:620 src/BurnDlg.cpp:627
-#: src/BurnDlg.cpp:632 src/BurnDlg.cpp:638 src/BurnDlg.cpp:644 src/BurnDlg.cpp:657 src/BurnDlg.cpp:660
-#: src/MainWin.cpp:1073 src/MainWin.cpp:1094 src/MainWin.cpp:1099 src/ProcessBurn.cpp:68
-#: src/ProcessBurn.cpp:86 src/ProcessBurn.cpp:128 src/ProcessFormatDvd.cpp:44 src/ProcessFormatDvd.cpp:53
-#: src/ProcessPreview.cpp:45 src/ProcessPreview.cpp:53 src/ProcessPreview.cpp:61 src/ProcessPreview.cpp:82
+#: src/BurnDlg.cpp:104 src/BurnDlg.cpp:459 src/BurnDlg.cpp:466
+#: src/BurnDlg.cpp:588 src/BurnDlg.cpp:595 src/BurnDlg.cpp:601
+#: src/BurnDlg.cpp:608 src/BurnDlg.cpp:615 src/BurnDlg.cpp:620
+#: src/BurnDlg.cpp:627 src/BurnDlg.cpp:632 src/BurnDlg.cpp:638
+#: src/BurnDlg.cpp:644 src/BurnDlg.cpp:657 src/BurnDlg.cpp:660
+#: src/MainWin.cpp:1073 src/MainWin.cpp:1094 src/MainWin.cpp:1099
+#: src/ProcessBurn.cpp:68 src/ProcessBurn.cpp:86 src/ProcessBurn.cpp:128
+#: src/ProcessFormatDvd.cpp:44 src/ProcessFormatDvd.cpp:53
+#: src/ProcessPreview.cpp:45 src/ProcessPreview.cpp:53
+#: src/ProcessPreview.cpp:61 src/ProcessPreview.cpp:82
 #: src/ProcessPreview.cpp:87 src/TitlesetManager.cpp:467
 msgid "Burn"
 msgstr "Rezi"
@@ -283,8 +299,9 @@ msgstr "Rezi"
 msgid "Temp directory:"
 msgstr "Privremeni direktorijum:"
 
-#: src/BurnDlg.cpp:114 src/BurnDlg.cpp:138 src/BurnDlg.cpp:160 src/BurnDlg.cpp:186
-#: src/SubtitlePropDlg.cpp:148 src/SubtitlePropDlg.cpp:161 src/SubtitlePropDlg.cpp:179
+#: src/BurnDlg.cpp:114 src/BurnDlg.cpp:138 src/BurnDlg.cpp:160
+#: src/BurnDlg.cpp:186 src/SubtitlePropDlg.cpp:148 src/SubtitlePropDlg.cpp:161
+#: src/SubtitlePropDlg.cpp:179
 msgid "..."
 msgstr "..."
 
@@ -340,7 +357,8 @@ msgstr "dodaj podatke popravke greške"
 msgid "Start"
 msgstr "Pokreni"
 
-#: src/BurnDlg.cpp:229 src/SubtitlePropDlg.cpp:244 src/VideoFrameDlg.cpp:75 wxVillaLib/PropDlg.cpp:229
+#: src/BurnDlg.cpp:229 src/SubtitlePropDlg.cpp:244 src/VideoFrameDlg.cpp:75
+#: wxVillaLib/PropDlg.cpp:229
 msgid "Reset"
 msgstr "Resetuj"
 
@@ -360,7 +378,8 @@ msgstr ""
 msgid "N/A"
 msgstr "N/A"
 
-#: src/BurnDlg.cpp:401 src/BurnDlg.cpp:436 src/BurnDlg.cpp:437 src/BurnDlg.cpp:438
+#: src/BurnDlg.cpp:401 src/BurnDlg.cpp:436 src/BurnDlg.cpp:437
+#: src/BurnDlg.cpp:438
 msgid "GB"
 msgstr "GB"
 
@@ -376,8 +395,8 @@ msgstr "nedovoljno prostora u preivremenoj fascikli."
 msgid "Choose a directory"
 msgstr "Odabrati direktorijm"
 
-#: src/BurnDlg.cpp:536 src/MainWin.cpp:1218 src/TitlePropDlg.cpp:423 src/TitlePropDlg.cpp:439
-#: wxVillaLib/PropDlg.cpp:815
+#: src/BurnDlg.cpp:536 src/MainWin.cpp:1218 src/TitlePropDlg.cpp:423
+#: src/TitlePropDlg.cpp:439 wxVillaLib/PropDlg.cpp:815
 msgid "Choose a file"
 msgstr "Odabrati datoteku"
 
@@ -385,9 +404,9 @@ msgstr "Odabrati datoteku"
 msgid "Programs"
 msgstr ""
 
-#: src/BurnDlg.cpp:538 src/MainWin.cpp:1052 src/MainWin.cpp:1213 src/MainWin.cpp:1217
-#: src/MenuObjectPropDlg.cpp:458 src/MenuPropDlg.cpp:141 src/MenuPropDlg.cpp:155 src/TitlePropDlg.cpp:235
-#: src/TitlePropDlg.cpp:425
+#: src/BurnDlg.cpp:538 src/MainWin.cpp:1052 src/MainWin.cpp:1213
+#: src/MainWin.cpp:1217 src/MenuObjectPropDlg.cpp:458 src/MenuPropDlg.cpp:141
+#: src/MenuPropDlg.cpp:155 src/TitlePropDlg.cpp:235 src/TitlePropDlg.cpp:425
 msgid "All Files"
 msgstr "Sve"
 
@@ -401,7 +420,8 @@ msgid "Please enter output directory"
 msgstr "Imeti ime volumena."
 
 #: src/BurnDlg.cpp:594
-msgid "Output directory contains files. Please choose another output directory."
+msgid ""
+"Output directory contains files. Please choose another output directory."
 msgstr ""
 
 #: src/BurnDlg.cpp:600
@@ -409,8 +429,8 @@ msgstr ""
 msgid "Directory '%s' already exist. Do you want to overwrite it?"
 msgstr ""
 
-#: src/BurnDlg.cpp:608 src/BurnDlg.cpp:660 src/ProcessCleanTemp.cpp:43 src/ProcessCleanTemp.cpp:47
-#: src/ProcessCleanTemp.cpp:51
+#: src/BurnDlg.cpp:608 src/BurnDlg.cpp:660 src/ProcessCleanTemp.cpp:43
+#: src/ProcessCleanTemp.cpp:47 src/ProcessCleanTemp.cpp:51
 #, c-format
 msgid "Can't create directory '%s'"
 msgstr "emoguca kreacija direktorijuma '%s'"
@@ -470,13 +490,15 @@ msgstr ""
 msgid "fill"
 msgstr ""
 
-#: src/ButtonAddParamDlg.cpp:67 src/ButtonAddParamDlg.cpp:72 src/ButtonAddParamDlg.cpp:77
-#: src/MenuEditor.cpp:548 buttons/arrow-text-left.xml:8 buttons/arrow-text-left.xml:12
-#: buttons/arrow-text-right.xml:8 buttons/arrow-text-right.xml:13 buttons/frame-text.xml:25
-#: buttons/frame-text.xml:70 buttons/pill-opacity.xml:14 buttons/pill-opacity.xml:64
-#: buttons/pill-stroke.xml:14 buttons/pill-stroke.xml:73 buttons/pill2.xml:24 buttons/pill2.xml:36
-#: buttons/pill3.xml:17 buttons/pill3.xml:29 buttons/text-v3.xml:3 objects/text-v2.xml:3
-#: objects/text-v2.xml:19
+#: src/ButtonAddParamDlg.cpp:67 src/ButtonAddParamDlg.cpp:72
+#: src/ButtonAddParamDlg.cpp:77 src/MenuEditor.cpp:548
+#: buttons/arrow-text-left.xml:8 buttons/arrow-text-left.xml:12
+#: buttons/arrow-text-right.xml:8 buttons/arrow-text-right.xml:13
+#: buttons/frame-text.xml:25 buttons/frame-text.xml:70
+#: buttons/pill-opacity.xml:14 buttons/pill-opacity.xml:64
+#: buttons/pill-stroke.xml:14 buttons/pill-stroke.xml:73 buttons/pill2.xml:24
+#: buttons/pill2.xml:36 buttons/pill3.xml:17 buttons/pill3.xml:29
+#: buttons/text-v3.xml:3 objects/text-v2.xml:3 objects/text-v2.xml:19
 msgid "Text"
 msgstr "Tekst"
 
@@ -493,8 +515,9 @@ msgstr ""
 msgid "name"
 msgstr ""
 
-#: src/ButtonEditDlg.cpp:184 src/DVDAction.cpp:184 src/MenuObjectPropDlg.cpp:439
-#: src/MenuObjectPropDlg.cpp:679 src/MenuObjectPropDlg.cpp:688 src/MenuObjectPropDlg.cpp:700
+#: src/ButtonEditDlg.cpp:184 src/DVDAction.cpp:184
+#: src/MenuObjectPropDlg.cpp:439 src/MenuObjectPropDlg.cpp:679
+#: src/MenuObjectPropDlg.cpp:688 src/MenuObjectPropDlg.cpp:700
 msgid "title"
 msgstr "naziv"
 
@@ -548,8 +571,9 @@ msgstr "Dugmici"
 msgid "Directory:"
 msgstr "Direktorijum"
 
-#: src/ButtonEditDlg.cpp:287 buttons/circle-outline.xml:16 buttons/circle.xml:15 buttons/pill.xml:44
-#: buttons/text-circle-v2.xml:19 buttons/text-square-v2.xml:20 buttons/text-underlined-v3.xml:19
+#: src/ButtonEditDlg.cpp:287 buttons/circle-outline.xml:16
+#: buttons/circle.xml:15 buttons/pill.xml:44 buttons/text-circle-v2.xml:19
+#: buttons/text-square-v2.xml:20 buttons/text-underlined-v3.xml:19
 #: buttons/text-v3.xml:19
 msgid "Label"
 msgstr "Label"
@@ -573,18 +597,23 @@ msgstr "Naziv"
 msgid "Default width:"
 msgstr "Standardno dugme:"
 
-#: src/ButtonEditDlg.cpp:307 src/ButtonEditDlg.cpp:330 src/ButtonEditDlg.cpp:354 src/ButtonEditDlg.cpp:377
+#: src/ButtonEditDlg.cpp:307 src/ButtonEditDlg.cpp:330
+#: src/ButtonEditDlg.cpp:354 src/ButtonEditDlg.cpp:377
 #, fuzzy
 msgid "or"
 msgstr "Core"
 
-#: src/ButtonEditDlg.cpp:311 src/ButtonEditDlg.cpp:316 src/ButtonEditDlg.cpp:334 src/ButtonEditDlg.cpp:339
-#: src/ButtonEditDlg.cpp:358 src/ButtonEditDlg.cpp:363 src/ButtonEditDlg.cpp:381 src/ButtonEditDlg.cpp:386
+#: src/ButtonEditDlg.cpp:311 src/ButtonEditDlg.cpp:316
+#: src/ButtonEditDlg.cpp:334 src/ButtonEditDlg.cpp:339
+#: src/ButtonEditDlg.cpp:358 src/ButtonEditDlg.cpp:363
+#: src/ButtonEditDlg.cpp:381 src/ButtonEditDlg.cpp:386
 msgid "+"
 msgstr ""
 
-#: src/ButtonEditDlg.cpp:321 src/ButtonEditDlg.cpp:344 src/ButtonEditDlg.cpp:368 src/ButtonEditDlg.cpp:391
-#: src/SubtitlePropDlg.cpp:153 src/SubtitlePropDlg.cpp:167 src/SubtitlePropDlg.cpp:184
+#: src/ButtonEditDlg.cpp:321 src/ButtonEditDlg.cpp:344
+#: src/ButtonEditDlg.cpp:368 src/ButtonEditDlg.cpp:391
+#: src/SubtitlePropDlg.cpp:153 src/SubtitlePropDlg.cpp:167
+#: src/SubtitlePropDlg.cpp:184
 msgid "%"
 msgstr ""
 
@@ -631,7 +660,8 @@ msgstr "Ukloni"
 msgid "No SVG element is selected"
 msgstr ""
 
-#: src/ButtonEditDlg.cpp:643 src/NewProjectDlg.cpp:51 src/NewProjectDlg.cpp:134
+#: src/ButtonEditDlg.cpp:643 src/NewProjectDlg.cpp:51
+#: src/NewProjectDlg.cpp:134
 msgid "Info"
 msgstr ""
 
@@ -641,8 +671,9 @@ msgid ""
 " element for a new parameter"
 msgstr ""
 
-#: src/Cache.cpp:238 src/Cache.cpp:263 src/Process.cpp:25 src/ProcessMenuTransitions.cpp:121
-#: src/ProcessTranscode.cpp:195 src/ProcessTranscode.cpp:211
+#: src/Cache.cpp:238 src/Cache.cpp:263 src/Process.cpp:25
+#: src/ProcessMenuTransitions.cpp:121 src/ProcessTranscode.cpp:195
+#: src/ProcessTranscode.cpp:211
 #, c-format
 msgid "Can't remove file '%s'"
 msgstr "Nemoguce brisanje fajla '%s'"
@@ -681,12 +712,13 @@ msgstr "Naziv"
 msgid "Type:"
 msgstr ""
 
-#: src/ChaptersDlg.cpp:145 src/MenuCellsDlg.cpp:44 src/MenuCellsDlg.cpp:64 src/MenuCellsDlg.cpp:195
-#: src/MenuPropDlg.cpp:216
+#: src/ChaptersDlg.cpp:145 src/MenuCellsDlg.cpp:44 src/MenuCellsDlg.cpp:64
+#: src/MenuCellsDlg.cpp:195 src/MenuPropDlg.cpp:216
 msgid "Chapter"
 msgstr "Poglavlje"
 
-#: src/ChaptersDlg.cpp:147 src/MenuCellsDlg.cpp:44 src/MenuCellsDlg.cpp:65 src/MenuCellsDlg.cpp:195
+#: src/ChaptersDlg.cpp:147 src/MenuCellsDlg.cpp:44 src/MenuCellsDlg.cpp:65
+#: src/MenuCellsDlg.cpp:195
 msgid "Program"
 msgstr ""
 
@@ -698,12 +730,13 @@ msgstr ""
 msgid "End:"
 msgstr ""
 
-#: src/ChaptersDlg.cpp:156 src/DVD.cpp:966 src/DVD.cpp:1003 src/MenuPropDlg.cpp:195
+#: src/ChaptersDlg.cpp:156 src/DVD.cpp:966 src/DVD.cpp:1003
+#: src/MenuPropDlg.cpp:195
 msgid "Auto"
 msgstr "auto"
 
-#: src/ChaptersDlg.cpp:157 src/DVD.cpp:1006 src/MenuObjectPropDlg.cpp:161 src/MenuObjectPropDlg.cpp:559
-#: src/SettingsDlg.cpp:181
+#: src/ChaptersDlg.cpp:157 src/DVD.cpp:1006 src/MenuObjectPropDlg.cpp:161
+#: src/MenuObjectPropDlg.cpp:559 src/SettingsDlg.cpp:181
 msgid "Custom"
 msgstr "Korisnicko"
 
@@ -711,9 +744,10 @@ msgstr "Korisnicko"
 msgid "Pause:"
 msgstr "Pauza:"
 
-#: src/ChaptersDlg.cpp:174 src/MainWin.cpp:621 src/MenuPropDlg.cpp:171 src/SettingsDlg.cpp:167
-#: src/SettingsDlg.cpp:169 src/TitlePropDlg.cpp:150 src/TitlePropDlg.cpp:196 src/VideoFrameDlg.cpp:82
-#: src/VideoPropDlg.cpp:190 src/VideoPropDlg.cpp:195
+#: src/ChaptersDlg.cpp:174 src/MainWin.cpp:621 src/MenuPropDlg.cpp:171
+#: src/SettingsDlg.cpp:167 src/SettingsDlg.cpp:169 src/TitlePropDlg.cpp:150
+#: src/TitlePropDlg.cpp:196 src/VideoFrameDlg.cpp:82 src/VideoPropDlg.cpp:190
+#: src/VideoPropDlg.cpp:195
 msgid "sec"
 msgstr "sek"
 
@@ -736,7 +770,8 @@ msgstr "Pogrešno ime uređaja"
 msgid "Start time cannot be after end time"
 msgstr ""
 
-#: src/DirCtrl.cpp:24 src/MainWin.cpp:276 src/MainWin.cpp:283 src/MainWin.cpp:286
+#: src/DirCtrl.cpp:24 src/MainWin.cpp:276 src/MainWin.cpp:283
+#: src/MainWin.cpp:286
 msgid "&Refresh"
 msgstr "Obnovi"
 
@@ -747,7 +782,8 @@ msgstr "DVD meni može da sadrži samo 34 dugmada"
 
 #: src/DVD.cpp:273 src/Menu.cpp:1143 src/MenuEditor.cpp:467
 #, fuzzy
-msgid "Wide screen DVD menu (nopanscan/noletterbox) can contain maximal 18 buttons"
+msgid ""
+"Wide screen DVD menu (nopanscan/noletterbox) can contain maximal 18 buttons"
 msgstr "DVD meni može da sadrži samo 34 dugmada"
 
 #: src/DVD.cpp:277 src/Menu.cpp:1147 src/MenuEditor.cpp:471
@@ -903,7 +939,8 @@ msgstr ""
 msgid "jump to chapter menu"
 msgstr "Nemoze se preskociti iz vmg meni u zaglavlje."
 
-#: src/DVDAction.cpp:75 src/DVDAction.cpp:184 src/MenuObjectPropDlg.cpp:649 src/MenuObjectPropDlg.cpp:669
+#: src/DVDAction.cpp:75 src/DVDAction.cpp:184 src/MenuObjectPropDlg.cpp:649
+#: src/MenuObjectPropDlg.cpp:669
 msgid "menu"
 msgstr "meni"
 
@@ -927,8 +964,9 @@ msgstr ""
 msgid "jump to title"
 msgstr "skoci na"
 
-#: src/DVDAction.cpp:183 src/MenuObjectPropDlg.cpp:441 src/MenuObjectPropDlg.cpp:662
-#: src/MenuObjectPropDlg.cpp:671 src/MenuObjectPropDlg.cpp:681 src/MenuObjectPropDlg.cpp:690
+#: src/DVDAction.cpp:183 src/MenuObjectPropDlg.cpp:441
+#: src/MenuObjectPropDlg.cpp:662 src/MenuObjectPropDlg.cpp:671
+#: src/MenuObjectPropDlg.cpp:681 src/MenuObjectPropDlg.cpp:690
 #: src/MenuObjectPropDlg.cpp:699
 msgid "titleset"
 msgstr "poglavlje"
@@ -1013,12 +1051,16 @@ msgid "cannot jump to chapter %d of title %d, only %d exist"
 msgstr ""
 
 #: src/DVDAction.cpp:253
-msgid "cannot jump to a specific menu in another titleset, only to root/chapter/audio/subtitle/angle menu"
+msgid ""
+"cannot jump to a specific menu in another titleset, only to "
+"root/chapter/audio/subtitle/angle menu"
 msgstr ""
 
 #: src/DVDAction.cpp:256
 #, fuzzy
-msgid "cannot jump from regular menu to a title in another titleset, use VMGM menu instead"
+msgid ""
+"cannot jump from regular menu to a title in another titleset, use VMGM menu "
+"instead"
 msgstr "Nemoze se preskociti iz vmg meni u zaglavlje."
 
 #: src/DVDAction.cpp:258
@@ -1232,16 +1274,19 @@ msgstr "Novo\tCtrl-N"
 msgid "&Edit"
 msgstr ""
 
-#: src/MainWin.cpp:190 src/MainWin.cpp:333 src/TitlesetManager.cpp:146 src/TitlesetManager.cpp:167
+#: src/MainWin.cpp:190 src/MainWin.cpp:333 src/TitlesetManager.cpp:146
+#: src/TitlesetManager.cpp:167
 msgid "&File..."
 msgstr "Fajl..."
 
-#: src/MainWin.cpp:191 src/MainWin.cpp:334 src/TitlesetManager.cpp:147 src/TitlesetManager.cpp:168
+#: src/MainWin.cpp:191 src/MainWin.cpp:334 src/TitlesetManager.cpp:147
+#: src/TitlesetManager.cpp:168
 #, fuzzy
 msgid "File as &chapter..."
 msgstr "Sačekati..."
 
-#: src/MainWin.cpp:192 src/MainWin.cpp:335 src/TitlesetManager.cpp:148 src/TitlesetManager.cpp:169
+#: src/MainWin.cpp:192 src/MainWin.cpp:335 src/TitlesetManager.cpp:148
+#: src/TitlesetManager.cpp:169
 msgid "Titles from &DVD..."
 msgstr ""
 
@@ -1262,8 +1307,8 @@ msgstr ""
 msgid "&Titleset"
 msgstr "Poglavlje"
 
-#: src/MainWin.cpp:197 src/MenuEditor.cpp:360 src/MenuEditor.cpp:382 src/TitlesetManager.cpp:155
-#: src/TitlesetManager.cpp:176
+#: src/MainWin.cpp:197 src/MenuEditor.cpp:360 src/MenuEditor.cpp:382
+#: src/TitlesetManager.cpp:155 src/TitlesetManager.cpp:176
 msgid "&Add"
 msgstr "Dodaj"
 
@@ -1312,7 +1357,8 @@ msgstr "Postavi na pozadinu"
 msgid "&Play"
 msgstr "Pusti sve nazive"
 
-#: src/MainWin.cpp:274 src/MenuEditor.cpp:374 src/TitlesetManager.cpp:184 wxVillaLib/PropDlg.cpp:670
+#: src/MainWin.cpp:274 src/MenuEditor.cpp:374 src/TitlesetManager.cpp:184
+#: wxVillaLib/PropDlg.cpp:670
 msgid "&Delete"
 msgstr "Izbrisi"
 
@@ -1359,13 +1405,16 @@ msgstr "Pretraživač datoteke"
 msgid "Backgrounds"
 msgstr "Pozadine"
 
-#: src/MainWin.cpp:358 src/MainWin.cpp:367 src/MainWin.cpp:530 src/MenuPropDlg.cpp:182
+#: src/MainWin.cpp:358 src/MainWin.cpp:367 src/MainWin.cpp:530
+#: src/MenuPropDlg.cpp:182
 msgid "Buttons"
 msgstr "Dugmici"
 
-#: src/MainWin.cpp:522 src/MainWin.cpp:1371 src/MainWin.cpp:1393 src/MenuObject.cpp:266
-#: src/MenuObjectPropDlg.cpp:265 src/MenuObjectPropDlg.cpp:280 buttons/text-circle-v2.xml:13
-#: buttons/text-square-v2.xml:14 buttons/text-underlined-v3.xml:12 buttons/text-v3.xml:13
+#: src/MainWin.cpp:522 src/MainWin.cpp:1371 src/MainWin.cpp:1393
+#: src/MenuObject.cpp:266 src/MenuObjectPropDlg.cpp:265
+#: src/MenuObjectPropDlg.cpp:280 buttons/text-circle-v2.xml:13
+#: buttons/text-square-v2.xml:14 buttons/text-underlined-v3.xml:12
+#: buttons/text-v3.xml:13
 msgid "button"
 msgstr "dugme"
 
@@ -1488,7 +1537,8 @@ msgstr ""
 msgid "Audio/Video/Subtitle Files"
 msgstr "Datoteke Audio/Video/Titlovi"
 
-#: src/MainWin.cpp:1209 src/MenuPropDlg.cpp:154 src/TitlePropDlg.cpp:234 src/TitlePropDlg.cpp:441
+#: src/MainWin.cpp:1209 src/MenuPropDlg.cpp:154 src/TitlePropDlg.cpp:234
+#: src/TitlePropDlg.cpp:441
 msgid "Audio Files"
 msgstr "Audio"
 
@@ -1698,7 +1748,8 @@ msgstr "Iseci"
 msgid "&Copy"
 msgstr "Kopiraj"
 
-#: src/MenuEditor.cpp:371 src/MenuEditor.cpp:385 src/TitlesetManager.cpp:156 src/TitlesetManager.cpp:181
+#: src/MenuEditor.cpp:371 src/MenuEditor.cpp:385 src/TitlesetManager.cpp:156
+#: src/TitlesetManager.cpp:181
 msgid "&Paste"
 msgstr "Prilepi"
 
@@ -1741,7 +1792,8 @@ msgstr "Unos teksta"
 msgid "Please choose an image to insert"
 msgstr "Odabrati sliku za unos"
 
-#: src/MenuEditor.cpp:546 src/MenuObjectPropDlg.cpp:457 src/MenuPropDlg.cpp:140 src/TitlePropDlg.cpp:424
+#: src/MenuEditor.cpp:546 src/MenuObjectPropDlg.cpp:457
+#: src/MenuPropDlg.cpp:140 src/TitlePropDlg.cpp:424
 msgid "Image Files "
 msgstr "Slike"
 
@@ -1788,11 +1840,13 @@ msgstr "zadnje odabrano"
 msgid "track"
 msgstr "staza"
 
-#: src/MenuObjectPropDlg.cpp:176 src/MenuPropDlg.cpp:217 src/TitlePropDlg.cpp:254
+#: src/MenuObjectPropDlg.cpp:176 src/MenuPropDlg.cpp:217
+#: src/TitlePropDlg.cpp:254
 msgid "Audio"
 msgstr "Audio"
 
-#: src/MenuObjectPropDlg.cpp:183 src/MenuObjectPropDlg.cpp:200 src/NewProjectDlg.cpp:134
+#: src/MenuObjectPropDlg.cpp:183 src/MenuObjectPropDlg.cpp:200
+#: src/NewProjectDlg.cpp:134
 #, fuzzy
 msgid "Warning"
 msgstr "Rezanje"
@@ -1831,7 +1885,8 @@ msgstr "Izgled"
 msgid "none"
 msgstr "nista"
 
-#: src/MenuObjectPropDlg.cpp:267 src/MenuPropDlg.cpp:126 src/SettingsDlg.cpp:278 src/VideoPropDlg.cpp:134
+#: src/MenuObjectPropDlg.cpp:267 src/MenuPropDlg.cpp:126
+#: src/SettingsDlg.cpp:278 src/VideoPropDlg.cpp:134
 msgid "auto"
 msgstr "auto"
 
@@ -1851,8 +1906,8 @@ msgstr "Odabrano"
 msgid "Font..."
 msgstr "Font..."
 
-#: src/MenuObjectPropDlg.cpp:404 src/MenuObjectPropDlg.cpp:566 src/MenuPropDlg.cpp:81
-#: src/VideoPropDlg.cpp:140
+#: src/MenuObjectPropDlg.cpp:404 src/MenuObjectPropDlg.cpp:566
+#: src/MenuPropDlg.cpp:81 src/VideoPropDlg.cpp:140
 #, fuzzy
 msgid "Keep Aspect Ratio"
 msgstr "Ratio izgleda"
@@ -1889,11 +1944,14 @@ msgstr ""
 msgid "Slice"
 msgstr ""
 
-#: src/MenuObjectPropDlg.cpp:455 buttons/dotted-frame.xml:25 buttons/ellipse-v2.xml:23
-#: buttons/frame-text.xml:30 buttons/frame-v2.xml:18 buttons/gold-frame.xml:49 buttons/maroon-frame.xml:50
-#: buttons/movie.xml:27 buttons/painting_frame.xml:40 buttons/star-frame.xml:35 buttons/sticky_note.xml:43
-#: objects/ellipse-v3.xml:22 objects/ellipse45.xml:24 objects/frame-v3.xml:18 objects/frame45.xml:20
-#: objects/gold-frame.xml:45 objects/image.xml:3 objects/image.xml:9 objects/sticky_note.xml:42
+#: src/MenuObjectPropDlg.cpp:455 buttons/dotted-frame.xml:25
+#: buttons/ellipse-v2.xml:23 buttons/frame-text.xml:30 buttons/frame-v2.xml:18
+#: buttons/gold-frame.xml:49 buttons/maroon-frame.xml:50 buttons/movie.xml:27
+#: buttons/painting_frame.xml:40 buttons/star-frame.xml:35
+#: buttons/sticky_note.xml:43 objects/ellipse-v3.xml:22
+#: objects/ellipse45.xml:24 objects/frame-v3.xml:18 objects/frame45.xml:20
+#: objects/gold-frame.xml:45 objects/image.xml:3 objects/image.xml:9
+#: objects/sticky_note.xml:42
 msgid "Image"
 msgstr "Slika:"
 
@@ -1924,10 +1982,12 @@ msgstr ""
 msgid "Y:"
 msgstr ""
 
-#: src/MenuObjectPropDlg.cpp:551 buttons/arrow-blue.xml:26 buttons/arrow-cool.xml:17
-#: buttons/arrow-double.xml:13 buttons/arrow-gold.xml:26 buttons/arrow-green-double.xml:383
-#: buttons/arrow-green.xml:375 buttons/arrow-red.xml:29 buttons/arrow-simple-v2.xml:43
-#: buttons/arrow-star.xml:21 buttons/arrow.xml:42 buttons/arrow2.xml:25 buttons/arrow3.xml:19
+#: src/MenuObjectPropDlg.cpp:551 buttons/arrow-blue.xml:26
+#: buttons/arrow-cool.xml:17 buttons/arrow-double.xml:13
+#: buttons/arrow-gold.xml:26 buttons/arrow-green-double.xml:383
+#: buttons/arrow-green.xml:375 buttons/arrow-red.xml:29
+#: buttons/arrow-simple-v2.xml:43 buttons/arrow-star.xml:21
+#: buttons/arrow.xml:42 buttons/arrow2.xml:25 buttons/arrow3.xml:19
 #: buttons/gear.xml:86 buttons/star-frame.xml:28 objects/frame45.xml:34
 msgid "Rotation"
 msgstr "Rezolucija"
@@ -1973,8 +2033,8 @@ msgstr "Uneti komandu"
 msgid "Titleset"
 msgstr "Poglavlje"
 
-#: src/MenuPropDlg.cpp:53 src/MenuPropDlg.cpp:206 src/TitlesetManager.cpp:331 src/TitlesetManager.cpp:1220
-#: buttons/pill.xml:26
+#: src/MenuPropDlg.cpp:53 src/MenuPropDlg.cpp:206 src/TitlesetManager.cpp:331
+#: src/TitlesetManager.cpp:1220 buttons/pill.xml:26
 msgid "Menu"
 msgstr "Meni"
 
@@ -2029,7 +2089,8 @@ msgstr "Titl"
 msgid "Angle"
 msgstr "Ugao"
 
-#: src/MenuPropDlg.cpp:221 src/TitlePropDlg.cpp:71 src/TitlePropDlg.cpp:263 src/TitlesetManager.cpp:331
+#: src/MenuPropDlg.cpp:221 src/TitlePropDlg.cpp:71 src/TitlePropDlg.cpp:263
+#: src/TitlesetManager.cpp:331
 msgid "Title"
 msgstr "Naziv"
 
@@ -2098,8 +2159,8 @@ msgstr "Kapacitet diska:"
 msgid "Video bitrate:"
 msgstr "Meni video bitrejta:"
 
-#: src/NewProjectDlg.cpp:65 src/NewProjectDlg.cpp:71 src/SettingsDlg.cpp:249 src/SettingsDlg.cpp:254
-#: src/SettingsDlg.cpp:258
+#: src/NewProjectDlg.cpp:65 src/NewProjectDlg.cpp:71 src/SettingsDlg.cpp:249
+#: src/SettingsDlg.cpp:254 src/SettingsDlg.cpp:258
 msgid "KBit/s"
 msgstr "KBit/s"
 
@@ -2162,8 +2223,9 @@ msgstr "Rezanje"
 msgid "Please insert a blank or rewritable DVD into the device %s."
 msgstr "Uneti prazan DVD u uređaju %s."
 
-#: src/ProcessBurn.cpp:69 src/ProcessBurn.cpp:87 src/ProcessBurn.cpp:129 src/ProcessFormatDvd.cpp:45
-#: src/ProcessPreview.cpp:88 src/ProgressDlg.cpp:291
+#: src/ProcessBurn.cpp:69 src/ProcessBurn.cpp:87 src/ProcessBurn.cpp:129
+#: src/ProcessFormatDvd.cpp:45 src/ProcessPreview.cpp:88
+#: src/ProgressDlg.cpp:291
 msgid "Aborted"
 msgstr "Zaustavljeno"
 
@@ -2234,8 +2296,8 @@ msgstr "Generisanje menia %d od %d"
 msgid "Create menu MPEG"
 msgstr "Kreiraj jumppads"
 
-#: src/ProcessMenu.cpp:150 src/ProcessMenu.cpp:174 src/ProcessMenu.cpp:188 src/ProcessMenu.cpp:249
-#: src/ProcessMenu.cpp:279 src/ProcessMenu.cpp:293
+#: src/ProcessMenu.cpp:150 src/ProcessMenu.cpp:174 src/ProcessMenu.cpp:188
+#: src/ProcessMenu.cpp:249 src/ProcessMenu.cpp:279 src/ProcessMenu.cpp:293
 msgid "Error creation of menu"
 msgstr "Greska pokretanja komande: "
 
@@ -2254,13 +2316,16 @@ msgstr "Generisanje menia %d od %d"
 msgid "Transcode audio from"
 msgstr "Transkodirana datoteka:"
 
-#: src/ProcessMenu.cpp:211 src/ProcessMenu.cpp:217 src/ProcessMenuTransitions.cpp:126
-#: src/ProcessMenuTransitions.cpp:136 src/ProcessSlideshow.cpp:198 src/ProcessTranscode.cpp:189
-#: src/ProcessTranscode.cpp:200 src/ProcessTranscode.cpp:226 src/ProcessTranscode.cpp:238
+#: src/ProcessMenu.cpp:211 src/ProcessMenu.cpp:217
+#: src/ProcessMenuTransitions.cpp:126 src/ProcessMenuTransitions.cpp:136
+#: src/ProcessSlideshow.cpp:198 src/ProcessTranscode.cpp:189
+#: src/ProcessTranscode.cpp:200 src/ProcessTranscode.cpp:226
+#: src/ProcessTranscode.cpp:238
 msgid "Error transcoding of "
 msgstr "Greska transkodiranja "
 
-#: src/ProcessMenu.cpp:222 src/ProcessMenu.cpp:302 src/ProcessSlideshow.cpp:203
+#: src/ProcessMenu.cpp:222 src/ProcessMenu.cpp:302
+#: src/ProcessSlideshow.cpp:203
 msgid "Multiplexing audio and video"
 msgstr "Multiplksiranje audio i videa"
 
@@ -2283,8 +2348,8 @@ msgstr "Multiplksiranje titlova (dugmici) u mpeg"
 msgid "Can't rename file '%s' in '%s'"
 msgstr "Nemoguce brisanje fajla '%s'"
 
-#: src/ProcessMenuTransitions.cpp:104 src/ProcessMenuTransitions.cpp:161 src/ProcessMenuTransitions.cpp:242
-#: src/ProcessMenuTransitions.cpp:254
+#: src/ProcessMenuTransitions.cpp:104 src/ProcessMenuTransitions.cpp:161
+#: src/ProcessMenuTransitions.cpp:242 src/ProcessMenuTransitions.cpp:254
 #, fuzzy
 msgid "Error creation of transition"
 msgstr "Greška kreiranja slajdšoua"
@@ -2298,23 +2363,25 @@ msgstr "Standardni format audia:"
 msgid "Start preview"
 msgstr "Pocni pregled"
 
-#: src/ProcessPreview.cpp:42 src/ProcessPreview.cpp:58 src/ProcessPreview.cpp:79
+#: src/ProcessPreview.cpp:42 src/ProcessPreview.cpp:58
+#: src/ProcessPreview.cpp:79
 #, fuzzy
 msgid ""
-"Starting of selected DVD player is failed. Please open the following directory with your favorite DVD "
-"player: "
+"Starting of selected DVD player is failed. Please open the following "
+"directory with your favorite DVD player: "
 msgstr ""
-"Nažalost nema DVD plejera u  „DVDStyler“. Uneti putanju do DVD plejera u 'Parametri/Core/pregled' ili "
-"otvoriti ovu fasciklu sa vašim DVD plejerom: "
+"Nažalost nema DVD plejera u  „DVDStyler“. Uneti putanju do DVD plejera u "
+"'Parametri/Core/pregled' ili otvoriti ovu fasciklu sa vašim DVD plejerom: "
 
 #: src/ProcessPreview.cpp:49
 #, fuzzy
 msgid ""
-"VLC player is not found. Please install VLC player (http://www.videolan.org) in Applications directory or "
-"open the following directory with your favorite DVD player: "
+"VLC player is not found. Please install VLC player (http://www.videolan.org)"
+" in Applications directory or open the following directory with your "
+"favorite DVD player: "
 msgstr ""
-"Nažalost nema DVD plejera u  „DVDStyler“. Uneti putanju do DVD plejera u 'Parametri/Core/pregled' ili "
-"otvoriti ovu fasciklu sa vašim DVD plejerom: "
+"Nažalost nema DVD plejera u  „DVDStyler“. Uneti putanju do DVD plejera u "
+"'Parametri/Core/pregled' ili otvoriti ovu fasciklu sa vašim DVD plejerom: "
 
 #: src/ProcessPreview.cpp:86
 msgid "Do you want to burn this video to DVD?"
@@ -2329,7 +2396,8 @@ msgstr "Kreirati sliku za video?"
 msgid "Generating slideshow %u of %lu"
 msgstr "Generisanje slajdšoua %d od %d"
 
-#: src/ProcessSlideshow.cpp:102 src/ProcessSlideshow.cpp:130 src/ProcessSlideshow.cpp:153
+#: src/ProcessSlideshow.cpp:102 src/ProcessSlideshow.cpp:130
+#: src/ProcessSlideshow.cpp:153
 msgid "Error creation of slideshow"
 msgstr "Greška kreiranja slajdšoua"
 
@@ -2375,7 +2443,8 @@ msgstr "Multiplksiranje audio i videa niza"
 msgid "Analysis of audio track %d"
 msgstr "odaberi audio stazu %d i "
 
-#: src/ProcessTranscode.cpp:286 src/ProcessTranscode.cpp:300 wxVillaLib/ProgramProcess.cpp:84
+#: src/ProcessTranscode.cpp:286 src/ProcessTranscode.cpp:300
+#: wxVillaLib/ProgramProcess.cpp:84
 #, c-format
 msgid "Execution of '%s' failed."
 msgstr ""
@@ -2441,7 +2510,8 @@ msgstr "Uspesno rezanje."
 msgid "Generating was successful."
 msgstr "Uspesno generisanje."
 
-#: src/SettingsDlg.cpp:45 src/SettingsDlg.cpp:417 src/SettingsDlg.cpp:423 buttons/settings.xml:3
+#: src/SettingsDlg.cpp:45 src/SettingsDlg.cpp:417 src/SettingsDlg.cpp:423
+#: buttons/settings.xml:3
 msgid "Settings"
 msgstr "Podesavanja"
 
@@ -2963,11 +3033,15 @@ msgid "File '%s' doesn't contain any audio or video streams."
 msgstr ""
 
 #: src/TitlesetManager.cpp:572
-msgid "This file contains video in PAL format. Do you want to change DVD format to PAL too?"
+msgid ""
+"This file contains video in PAL format. Do you want to change DVD format to "
+"PAL too?"
 msgstr ""
 
 #: src/TitlesetManager.cpp:576
-msgid "This file contains video in NTSC format. Do you want to change DVD format to NTSC too?"
+msgid ""
+"This file contains video in NTSC format. Do you want to change DVD format to"
+" NTSC too?"
 msgstr ""
 
 #: src/TitlesetManager.cpp:582
@@ -2976,8 +3050,8 @@ msgstr ""
 
 #: src/TitlesetManager.cpp:712
 msgid ""
-"The video bitrate is reduced below 2 Mb/s to fit your video on DVD. This can produce DVD with bad video "
-"quality."
+"The video bitrate is reduced below 2 Mb/s to fit your video on DVD. This can"
+" produce DVD with bad video quality."
 msgstr ""
 
 #: src/TitlesetManager.cpp:725 src/TitlesetManager.cpp:762
@@ -3141,18 +3215,21 @@ msgstr "Strela"
 msgid "Colour of the circle"
 msgstr "Boja kruga"
 
-#: buttons/arrow-blue.xml:40 buttons/arrow-red.xml:43 buttons/arrow-simple-v2.xml:19
-#: buttons/arrow-text-left.xml:32 buttons/arrow-text-right.xml:33 buttons/arrow3d-left.xml:29
-#: buttons/arrow3d-right.xml:29 buttons/gear.xml:105 buttons/gold-frame.xml:70 buttons/home-moon.xml:36
-#: buttons/pill-opacity.xml:77 buttons/pill-stroke.xml:86
+#: buttons/arrow-blue.xml:40 buttons/arrow-red.xml:43
+#: buttons/arrow-simple-v2.xml:19 buttons/arrow-text-left.xml:32
+#: buttons/arrow-text-right.xml:33 buttons/arrow3d-left.xml:29
+#: buttons/arrow3d-right.xml:29 buttons/gear.xml:105 buttons/gold-frame.xml:70
+#: buttons/home-moon.xml:36 buttons/pill-opacity.xml:77
+#: buttons/pill-stroke.xml:86
 #, fuzzy
 msgid "Stroke color"
 msgstr "Boja ivice"
 
-#: buttons/arrow-blue.xml:47 buttons/arrow-cool.xml:38 buttons/arrow-gold.xml:33
-#: buttons/arrow-mirror-left.xml:19 buttons/arrow-mirror-right.xml:19 buttons/arrow-red.xml:50
-#: buttons/arrow-simple-v2.xml:31 buttons/arrow-text-left.xml:25 buttons/arrow-text-right.xml:26
-#: buttons/glow_arrow.xml:33
+#: buttons/arrow-blue.xml:47 buttons/arrow-cool.xml:38
+#: buttons/arrow-gold.xml:33 buttons/arrow-mirror-left.xml:19
+#: buttons/arrow-mirror-right.xml:19 buttons/arrow-red.xml:50
+#: buttons/arrow-simple-v2.xml:31 buttons/arrow-text-left.xml:25
+#: buttons/arrow-text-right.xml:26 buttons/glow_arrow.xml:33
 #, fuzzy
 msgid "Arrow color"
 msgstr "Boja strele"
@@ -3211,7 +3288,8 @@ msgstr "Boja strele"
 msgid "Green Arrow"
 msgstr "Strela"
 
-#: buttons/arrow-green.xml:382 buttons/arrow.xml:11 buttons/arrow2.xml:60 buttons/arrow3.xml:40
+#: buttons/arrow-green.xml:382 buttons/arrow.xml:11 buttons/arrow2.xml:60
+#: buttons/arrow3.xml:40
 msgid "Arrow colour"
 msgstr "Boja strele"
 
@@ -3238,7 +3316,8 @@ msgstr ""
 msgid "Red Arrow"
 msgstr "Strela"
 
-#: buttons/arrow-red.xml:36 buttons/pill-opacity.xml:24 buttons/pill-stroke.xml:26 buttons/pill3.xml:22
+#: buttons/arrow-red.xml:36 buttons/pill-opacity.xml:24
+#: buttons/pill-stroke.xml:26 buttons/pill3.xml:22
 #, fuzzy
 msgid "Button color"
 msgstr "Spoljna boja"
@@ -3248,13 +3327,16 @@ msgstr "Spoljna boja"
 msgid "Simple Arrow"
 msgstr "Strela"
 
-#: buttons/arrow-simple-v2.xml:50 buttons/arrow3d-left.xml:41 buttons/arrow3d-right.xml:41
-#: buttons/dotted-frame.xml:100 buttons/ellipse-v2.xml:44 buttons/frame-text.xml:63 buttons/frame-text.xml:83
-#: buttons/frame-v2.xml:53 buttons/gear.xml:119 buttons/home-moon.xml:62 buttons/home-v2.xml:35
-#: buttons/settings.xml:30 buttons/star-frame.xml:70 buttons/text-circle-v2.xml:32
-#: buttons/text-square-v2.xml:33 buttons/text-underlined-v3.xml:32 buttons/text-v3.xml:58
-#: objects/ellipse-v3.xml:57 objects/ellipse45.xml:59 objects/frame-v3.xml:67 objects/frame45.xml:76
-#: objects/rectangle-v2.xml:38 objects/text-v2.xml:53
+#: buttons/arrow-simple-v2.xml:50 buttons/arrow3d-left.xml:41
+#: buttons/arrow3d-right.xml:41 buttons/dotted-frame.xml:100
+#: buttons/ellipse-v2.xml:44 buttons/frame-text.xml:63
+#: buttons/frame-text.xml:83 buttons/frame-v2.xml:53 buttons/gear.xml:119
+#: buttons/home-moon.xml:62 buttons/home-v2.xml:35 buttons/settings.xml:30
+#: buttons/star-frame.xml:70 buttons/text-circle-v2.xml:32
+#: buttons/text-square-v2.xml:33 buttons/text-underlined-v3.xml:32
+#: buttons/text-v3.xml:58 objects/ellipse-v3.xml:57 objects/ellipse45.xml:59
+#: objects/frame-v3.xml:67 objects/frame45.xml:76 objects/rectangle-v2.xml:38
+#: objects/text-v2.xml:53
 #, fuzzy
 msgid "Shadow"
 msgstr "Pokaži"
@@ -3276,8 +3358,9 @@ msgstr "Boja trougla"
 msgid "Text Arrow Left"
 msgstr ""
 
-#: buttons/arrow-text-left.xml:18 buttons/arrow-text-right.xml:19 buttons/pill-opacity.xml:70
-#: buttons/pill-stroke.xml:79 buttons/pill2.xml:42 buttons/pill3.xml:35
+#: buttons/arrow-text-left.xml:18 buttons/arrow-text-right.xml:19
+#: buttons/pill-opacity.xml:70 buttons/pill-stroke.xml:79 buttons/pill2.xml:42
+#: buttons/pill3.xml:35
 #, fuzzy
 msgid "Text color"
 msgstr "Boja teksta"
@@ -3290,14 +3373,16 @@ msgstr ""
 msgid "Arrow"
 msgstr "Strela"
 
-#: buttons/arrow.xml:23 buttons/cancel.xml:28 buttons/circle-outline.xml:36 buttons/circle.xml:28
-#: buttons/ellipse-v2.xml:51 buttons/ok.xml:27 objects/ellipse-v3.xml:43 objects/ellipse45.xml:45
-#: objects/frame-v3.xml:53 objects/frame45.xml:62 objects/text-v2.xml:32
+#: buttons/arrow.xml:23 buttons/cancel.xml:28 buttons/circle-outline.xml:36
+#: buttons/circle.xml:28 buttons/ellipse-v2.xml:51 buttons/ok.xml:27
+#: objects/ellipse-v3.xml:43 objects/ellipse45.xml:45 objects/frame-v3.xml:53
+#: objects/frame45.xml:62 objects/text-v2.xml:32
 msgid "Outline colour"
 msgstr "Spoljna boja"
 
-#: buttons/arrow.xml:35 buttons/circle-outline.xml:48 buttons/circle.xml:35 buttons/ellipse-v2.xml:37
-#: objects/ellipse-v3.xml:36 objects/ellipse45.xml:38 objects/frame-v3.xml:46 objects/frame45.xml:55
+#: buttons/arrow.xml:35 buttons/circle-outline.xml:48 buttons/circle.xml:35
+#: buttons/ellipse-v2.xml:37 objects/ellipse-v3.xml:36
+#: objects/ellipse45.xml:38 objects/frame-v3.xml:46 objects/frame45.xml:55
 #: objects/text-v2.xml:39
 msgid "Outline width"
 msgstr "Spoljna širina"
@@ -3367,12 +3452,14 @@ msgstr "Boja kruga"
 msgid "01"
 msgstr ""
 
-#: buttons/circle-outline.xml:22 buttons/circle.xml:21 buttons/text-circle-v2.xml:39
+#: buttons/circle-outline.xml:22 buttons/circle.xml:21
+#: buttons/text-circle-v2.xml:39
 msgid "Circle colour"
 msgstr "Boja kruga"
 
-#: buttons/circle-outline.xml:29 buttons/circle.xml:42 buttons/frame-text.xml:76 buttons/pill.xml:50
-#: buttons/text-circle-v2.xml:25 buttons/text-square-v2.xml:26 buttons/text-underlined-v3.xml:25
+#: buttons/circle-outline.xml:29 buttons/circle.xml:42
+#: buttons/frame-text.xml:76 buttons/pill.xml:50 buttons/text-circle-v2.xml:25
+#: buttons/text-square-v2.xml:26 buttons/text-underlined-v3.xml:25
 #: buttons/text-v3.xml:25
 msgid "Text colour"
 msgstr "Boja teksta"
@@ -3387,30 +3474,36 @@ msgstr "Boja kruga"
 msgid "Dotted frame"
 msgstr "Video"
 
-#: buttons/dotted-frame.xml:32 buttons/ellipse-v2.xml:30 buttons/frame-v2.xml:25 buttons/gold-frame.xml:56
-#: buttons/maroon-frame.xml:57 buttons/movie.xml:34 buttons/star-frame.xml:42 objects/ellipse-v3.xml:29
-#: objects/ellipse45.xml:31 objects/frame-v3.xml:25 objects/frame45.xml:27
+#: buttons/dotted-frame.xml:32 buttons/ellipse-v2.xml:30
+#: buttons/frame-v2.xml:25 buttons/gold-frame.xml:56
+#: buttons/maroon-frame.xml:57 buttons/movie.xml:34 buttons/star-frame.xml:42
+#: objects/ellipse-v3.xml:29 objects/ellipse45.xml:31 objects/frame-v3.xml:25
+#: objects/frame45.xml:27
 msgid "Image opacity"
 msgstr "Opacitet slike"
 
-#: buttons/dotted-frame.xml:39 buttons/frame-text.xml:51 buttons/frame-v2.xml:60 buttons/movie.xml:41
-#: buttons/pill-opacity.xml:31 buttons/pill-stroke.xml:33 buttons/star-frame.xml:49
+#: buttons/dotted-frame.xml:39 buttons/frame-text.xml:51
+#: buttons/frame-v2.xml:60 buttons/movie.xml:41 buttons/pill-opacity.xml:31
+#: buttons/pill-stroke.xml:33 buttons/star-frame.xml:49
 msgid "Border colour"
 msgstr "Boja ivice"
 
-#: buttons/dotted-frame.xml:46 buttons/frame-text.xml:37 buttons/frame-v2.xml:46 buttons/pill-opacity.xml:38
+#: buttons/dotted-frame.xml:46 buttons/frame-text.xml:37
+#: buttons/frame-v2.xml:46 buttons/pill-opacity.xml:38
 #: buttons/pill-stroke.xml:40 buttons/star-frame.xml:56
 msgid "Border width"
 msgstr "Širina ivice"
 
-#: buttons/dotted-frame.xml:53 buttons/frame-text.xml:44 buttons/pill-opacity.xml:45
-#: buttons/pill-stroke.xml:47
+#: buttons/dotted-frame.xml:53 buttons/frame-text.xml:44
+#: buttons/pill-opacity.xml:45 buttons/pill-stroke.xml:47
 msgid "Corner round"
 msgstr ""
 
-#: buttons/dotted-frame.xml:60 buttons/ellipse-v2.xml:63 buttons/frame-v2.xml:72 buttons/gold-frame.xml:77
-#: buttons/maroon-frame.xml:85 buttons/star-frame.xml:63 objects/ellipse-v3.xml:50 objects/ellipse45.xml:52
-#: objects/frame-v3.xml:60 objects/frame45.xml:69
+#: buttons/dotted-frame.xml:60 buttons/ellipse-v2.xml:63
+#: buttons/frame-v2.xml:72 buttons/gold-frame.xml:77
+#: buttons/maroon-frame.xml:85 buttons/star-frame.xml:63
+#: objects/ellipse-v3.xml:50 objects/ellipse45.xml:52 objects/frame-v3.xml:60
+#: objects/frame45.xml:69
 msgid "Inner colour"
 msgstr "Unutrašnja boja"
 
@@ -3435,7 +3528,8 @@ msgstr "Elipsa"
 msgid "Frame and Text"
 msgstr ""
 
-#: buttons/frame-text.xml:90 buttons/pill-opacity.xml:91 buttons/pill-stroke.xml:100
+#: buttons/frame-text.xml:90 buttons/pill-opacity.xml:91
+#: buttons/pill-stroke.xml:100
 msgid "Text offset"
 msgstr ""
 
@@ -3443,13 +3537,13 @@ msgstr ""
 msgid "Frame"
 msgstr "Frejm"
 
-#: buttons/frame-v2.xml:32 buttons/text-v3.xml:44 objects/frame-v3.xml:32 objects/frame45.xml:41
-#: objects/rectangle-v2.xml:17
+#: buttons/frame-v2.xml:32 buttons/text-v3.xml:44 objects/frame-v3.xml:32
+#: objects/frame45.xml:41 objects/rectangle-v2.xml:17
 msgid "Rx"
 msgstr "Rx"
 
-#: buttons/frame-v2.xml:39 buttons/text-v3.xml:51 objects/frame-v3.xml:39 objects/frame45.xml:48
-#: objects/rectangle-v2.xml:24
+#: buttons/frame-v2.xml:39 buttons/text-v3.xml:51 objects/frame-v3.xml:39
+#: objects/frame45.xml:48 objects/rectangle-v2.xml:24
 msgid "Ry"
 msgstr "Ry"
 
@@ -3457,7 +3551,8 @@ msgstr "Ry"
 msgid "Gear"
 msgstr ""
 
-#: buttons/gear.xml:112 buttons/home-moon.xml:43 buttons/pill-opacity.xml:84 buttons/pill-stroke.xml:93
+#: buttons/gear.xml:112 buttons/home-moon.xml:43 buttons/pill-opacity.xml:84
+#: buttons/pill-stroke.xml:93
 #, fuzzy
 msgid "Stroke width"
 msgstr "Širina ivice"
@@ -3481,18 +3576,21 @@ msgstr "Boja strele"
 msgid "Gold frame"
 msgstr "Video"
 
-#: buttons/gold-frame.xml:63 buttons/maroon-frame.xml:64 buttons/painting_frame.xml:47
+#: buttons/gold-frame.xml:63 buttons/maroon-frame.xml:64
+#: buttons/painting_frame.xml:47
 #, fuzzy
 msgid "Frame colour"
 msgstr "Boja kruga"
 
-#: buttons/gold-frame.xml:84 buttons/maroon-frame.xml:92 buttons/pill-opacity.xml:52
-#: buttons/pill-stroke.xml:54 buttons/star-frame.xml:77 buttons/sticky_note.xml:64
+#: buttons/gold-frame.xml:84 buttons/maroon-frame.xml:92
+#: buttons/pill-opacity.xml:52 buttons/pill-stroke.xml:54
+#: buttons/star-frame.xml:77 buttons/sticky_note.xml:64
 #, fuzzy
 msgid "Selection colour"
 msgstr "Boja prstena"
 
-#: buttons/gold-frame.xml:96 buttons/pill-stroke.xml:66 buttons/sticky_note.xml:76
+#: buttons/gold-frame.xml:96 buttons/pill-stroke.xml:66
+#: buttons/sticky_note.xml:76
 #, fuzzy
 msgid "Selection width"
 msgstr "Odabrano"
@@ -3758,11 +3856,12 @@ msgstr ""
 #~ msgstr "Boja:"
 
 #~ msgid ""
-#~ "Unfortunately there is no DVD player specified in the DVDStyler settings. Please set the path to the DVD "
-#~ "player in the 'Settings/Core/Preview command' or open the following directory with your DVD player: "
+#~ "Unfortunately there is no DVD player specified in the DVDStyler settings. "
+#~ "Please set the path to the DVD player in the 'Settings/Core/Preview command'"
+#~ " or open the following directory with your DVD player: "
 #~ msgstr ""
-#~ "Nažalost nema DVD plejera u  „DVDStyler“. Uneti putanju do DVD plejera u 'Parametri/Core/pregled' ili "
-#~ "otvoriti ovu fasciklu sa vašim DVD plejerom: "
+#~ "Nažalost nema DVD plejera u  „DVDStyler“. Uneti putanju do DVD plejera u "
+#~ "'Parametri/Core/pregled' ili otvoriti ovu fasciklu sa vašim DVD plejerom: "
 
 #~ msgid "Preview command:"
 #~ msgstr "Pregled komanda:"

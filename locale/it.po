@@ -50,7 +50,8 @@ msgid "Copyright: "
 msgstr "Copyright: "
 
 #: src/About.cpp:73
-msgid "DVDStyler is a crossplatform authoring system for Video DVD production."
+msgid ""
+"DVDStyler is a crossplatform authoring system for Video DVD production."
 msgstr "DVDStyler è un sistema di produzione DVD video multipiattaforma."
 
 #: src/About.cpp:85
@@ -73,8 +74,8 @@ msgstr "WIKI"
 #: src/About.cpp:89
 #, c-format
 msgid ""
-"Some documentation and %sFAQ%s you can find in %sDVDStyler WIKI%s or you can "
-"publish there your comments or small guides."
+"Some documentation and %sFAQ%s you can find in %sDVDStyler WIKI%s or you can"
+" publish there your comments or small guides."
 msgstr ""
 "Una parte della documentazione e delle %sFAQ%s si trovano (e possono essere "
 "aggiunte) nel %sWIKI DVDStyler%s."
@@ -86,11 +87,11 @@ msgstr "Bug e RFE"
 #: src/About.cpp:93
 #, c-format
 msgid ""
-"Please use %sSourceforge Bugtracing system%s to report bug and %sSourceforge "
-"RFE system%s to submit a new feature request."
+"Please use the %sGitHub issue tracker%s to report bugs or submit feature "
+"requests."
 msgstr ""
-"Per segnalare un bug usa il %sSistema bugtracking Sourceforge%s.<br>Per "
-"richiedere una nuova funzionalità usa %sSistema RFE Sourceforge%s."
+"Per favore, usa il %sGitHub issue tracker%s per segnalare bug o inviare "
+"richieste di nuove funzionalità."
 
 #: src/About.cpp:98
 msgid "Support"
@@ -123,33 +124,33 @@ msgstr "Autori"
 #: src/About.cpp:143
 msgid ""
 "DVDStyler is <a href='http://www.gnu.org/philosophy/free-sw.html'>free "
-"software</a> distributed under <a href='http://www.gnu.org/copyleft/gpl."
-"html'>GNU General Public License (GPL)</a>. Please visit those sites for "
-"details of each agreement."
+"software</a> distributed under <a "
+"href='http://www.gnu.org/copyleft/gpl.html'>GNU General Public License "
+"(GPL)</a>. Please visit those sites for details of each agreement."
 msgstr ""
-"DVDStyler è <a href='http://www.gnu.org/philosophy/free-sw.html'>un software "
-"libero</a> distribuito sotto la <a href='http://www.gnu.org/copyleft/gpl."
-"html'>Licenza Pubblica Generica (GPL)</a>. <br> <br>Per maggiori dettagli "
-"visita i relativi siti."
+"DVDStyler è <a href='http://www.gnu.org/philosophy/free-sw.html'>un software"
+" libero</a> distribuito sotto la <a "
+"href='http://www.gnu.org/copyleft/gpl.html'>Licenza Pubblica Generica "
+"(GPL)</a>. <br> <br>Per maggiori dettagli visita i relativi siti."
 
 #: src/About.cpp:148
 msgid ""
-"THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR "
-"IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, "
+"THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR"
+" IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, "
 "FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE "
 "AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER "
 "LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING "
-"FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS "
-"IN THE SOFTWARE."
+"FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS"
+" IN THE SOFTWARE."
 msgstr ""
-"IL SOFTWARE È FORNITO “COSÌ COM'È”, SENZA GARANZIA DI ALCUN GENERE, ESPRESSA "
-"O IMPLICITA, INCLUDENDO E SENZA ESSERE LIMITATO ALLE GARANZIE DI POTER "
+"IL SOFTWARE È FORNITO “COSÌ COM'È”, SENZA GARANZIA DI ALCUN GENERE, ESPRESSA"
+" O IMPLICITA, INCLUDENDO E SENZA ESSERE LIMITATO ALLE GARANZIE DI POTER "
 "ESSERE VENDUTO, L'IDONEITÀ A UN PARTICOLARE FINE E LA NON VIOLAZIONE DEI "
 "DIRITTI ALTRUI. <br>IN NESSUN CASO GLI AUTORI O I DETENTORI DEL COPYRIGHT "
 "SARANNO RESPONSABILI PER QUALSIASI RECLAMO, DANNO O ALTRA RESPONSABILITÀ, "
 "SIA IN FORZA DEL CONTRATTO, IN SITUAZIONE NON CONTEMPLATE NEL CONTRATTO O "
-"ALTRO, CHE NASCA DA, AL DI FUORI O IN RIFERIMENTO AL SOFTWARE O ALL'USO O AD "
-"ALTRE QUESTIONI RIGUARDANTI IL SOFTWARE."
+"ALTRO, CHE NASCA DA, AL DI FUORI O IN RIFERIMENTO AL SOFTWARE O ALL'USO O AD"
+" ALTRE QUESTIONI RIGUARDANTI IL SOFTWARE."
 
 #: src/About.cpp:157
 msgid "Licence"
@@ -644,7 +645,8 @@ msgstr "Rimuovi selezonato"
 msgid "No SVG element is selected"
 msgstr "Nessun elemento SVG selezionato"
 
-#: src/ButtonEditDlg.cpp:643 src/NewProjectDlg.cpp:51 src/NewProjectDlg.cpp:134
+#: src/ButtonEditDlg.cpp:643 src/NewProjectDlg.cpp:51
+#: src/NewProjectDlg.cpp:134
 msgid "Info"
 msgstr "Info"
 
@@ -1015,8 +1017,8 @@ msgstr "impossibile saltare al capitolo %d del titolo %d, esiste solo %d"
 
 #: src/DVDAction.cpp:253
 msgid ""
-"cannot jump to a specific menu in another titleset, only to root/chapter/"
-"audio/subtitle/angle menu"
+"cannot jump to a specific menu in another titleset, only to "
+"root/chapter/audio/subtitle/angle menu"
 msgstr ""
 "impossibile saltare al menu sepecificato in un altro titolo, solo nel menu "
 "principale/capitolo/audio/sottotitoli/angolo"
@@ -1086,7 +1088,8 @@ msgstr "impossibile specificare un capitolo quando si salta ad un altro menu"
 
 #: src/DVDAction.cpp:381
 msgid "cannot omit menu/title if specifying vmgm/titleset"
-msgstr "impossibile omettere menu/titolo se specificato vmgm/insieme di titoli"
+msgstr ""
+"impossibile omettere menu/titolo se specificato vmgm/insieme di titoli"
 
 #: src/DVDAction.cpp:385 src/DVDAction.cpp:468
 msgid "VMGM must be specified with FPC"
@@ -1111,7 +1114,8 @@ msgstr "impossibile saltare al capitolo %d, esiste solo %d"
 
 #: src/DVDAction.cpp:455
 msgid "cannot 'call' a menu from another menu, use 'jump' instead"
-msgstr "impossibile 'chiamare' un menu da un altro menu, usa invece un 'salto'"
+msgstr ""
+"impossibile 'chiamare' un menu da un altro menu, usa invece un 'salto'"
 
 #: src/DVDAction.cpp:459
 msgid "cannot 'call' another title, use 'jump' instead"
@@ -1484,8 +1488,7 @@ msgid ""
 "please drag a video file into the bottom section of the window."
 msgstr ""
 "Il titolo %d non contiene alcun titolo video. \n"
-"Per aggiungere un titolo trascina un file video nella sezione bassa della "
-"finestra."
+"Per aggiungere un titolo trascina un file video nella sezione bassa della finestra."
 
 #: src/MainWin.cpp:1207
 msgid "Audio/Video/Subtitle Files"
@@ -1731,8 +1734,8 @@ msgstr "Inserisci testo"
 msgid "Please choose an image to insert"
 msgstr "Scegli un'immagine da inserire"
 
-#: src/MenuEditor.cpp:546 src/MenuObjectPropDlg.cpp:457 src/MenuPropDlg.cpp:140
-#: src/TitlePropDlg.cpp:424
+#: src/MenuEditor.cpp:546 src/MenuObjectPropDlg.cpp:457
+#: src/MenuPropDlg.cpp:140 src/TitlePropDlg.cpp:424
 msgid "Image Files "
 msgstr "File immagine "
 
@@ -2247,7 +2250,8 @@ msgstr "Transcodifica audio da"
 msgid "Error transcoding of "
 msgstr "Errore durante la transcodifica di "
 
-#: src/ProcessMenu.cpp:222 src/ProcessMenu.cpp:302 src/ProcessSlideshow.cpp:203
+#: src/ProcessMenu.cpp:222 src/ProcessMenu.cpp:302
+#: src/ProcessSlideshow.cpp:203
 msgid "Multiplexing audio and video"
 msgstr "Multiplaex audio e video in corso"
 
@@ -2294,13 +2298,12 @@ msgstr ""
 
 #: src/ProcessPreview.cpp:49
 msgid ""
-"VLC player is not found. Please install VLC player (http://www.videolan.org) "
-"in Applications directory or open the following directory with your favorite "
-"DVD player: "
+"VLC player is not found. Please install VLC player (http://www.videolan.org)"
+" in Applications directory or open the following directory with your "
+"favorite DVD player: "
 msgstr ""
 "VLC non trovato. \n"
-"Installa VLC (<http://www.videolan.org) nella cartella delle applicazioni o "
-"apri la seguente cartella con il player DVD preferito: "
+"Installa VLC (<http://www.videolan.org) nella cartella delle applicazioni o apri la seguente cartella con il player DVD preferito: "
 
 #: src/ProcessPreview.cpp:86
 msgid "Do you want to burn this video to DVD?"
@@ -2928,8 +2931,8 @@ msgstr ""
 
 #: src/TitlesetManager.cpp:576
 msgid ""
-"This file contains video in NTSC format. Do you want to change DVD format to "
-"NTSC too?"
+"This file contains video in NTSC format. Do you want to change DVD format to"
+" NTSC too?"
 msgstr ""
 "Questo file contiene un video in formato NTSC. \n"
 "Vuoi cambiare anche il formato del DVD in NTSC?"
@@ -2940,11 +2943,11 @@ msgstr "In un set titoli sono consentiti un massimo di 99 titoli."
 
 #: src/TitlesetManager.cpp:712
 msgid ""
-"The video bitrate is reduced below 2 Mb/s to fit your video on DVD. This can "
-"produce DVD with bad video quality."
+"The video bitrate is reduced below 2 Mb/s to fit your video on DVD. This can"
+" produce DVD with bad video quality."
 msgstr ""
-"Il bitrate del video verra abbassato sotto i 2 Mb/s per farlo stare nel DVD. "
-"Ciò comporterà una perdita di qualità."
+"Il bitrate del video verra abbassato sotto i 2 Mb/s per farlo stare nel DVD."
+" Ciò comporterà una perdita di qualità."
 
 #: src/TitlesetManager.cpp:725 src/TitlesetManager.cpp:762
 msgid "Please add a video track first."
@@ -3243,8 +3246,9 @@ msgid "Outline colour"
 msgstr "Colore esterno"
 
 #: buttons/arrow.xml:35 buttons/circle-outline.xml:48 buttons/circle.xml:35
-#: buttons/ellipse-v2.xml:37 objects/ellipse-v3.xml:36 objects/ellipse45.xml:38
-#: objects/frame-v3.xml:46 objects/frame45.xml:55 objects/text-v2.xml:39
+#: buttons/ellipse-v2.xml:37 objects/ellipse-v3.xml:36
+#: objects/ellipse45.xml:38 objects/frame-v3.xml:46 objects/frame45.xml:55
+#: objects/text-v2.xml:39
 msgid "Outline width"
 msgstr "Larghezza esterna"
 

@@ -87,12 +87,11 @@ About::About(wxWindow* parent): wxDialog(parent, -1, wxEmptyString,
     		wxT("<a href=\"http://sourceforge.net/p/dvdstyler/discussion/318795/\" target=\"_blank\">"), wxT("</a>"));
     page += wxT("<h5>") + wxString(_("WIKI")) + wxT("</h5>");
     page += wxString::Format(_("Some documentation and %sFAQ%s you can find in %sDVDStyler WIKI%s or you can publish there your comments or small guides."),
-			wxT("<a href=\"http://sourceforge.net/p/dvdstyler/wiki/Home/\" target=\"_blank\">"), wxT("</a>"),
-			wxT("<a href=\"http://sourceforge.net/p/dvdstyler/wiki/Home/\" target=\"_blank\">"), wxT("</a>"));
+			wxT("<a href=\"https://github.com/ntxalex/DVDStyler/wiki\" target=\"_blank\">"), wxT("</a>"),
+			wxT("<a href=\"https://github.com/ntxalex/DVDStyler/wiki\" target=\"_blank\">"), wxT("</a>"));
     page += wxT("<h5>") + wxString(_("Bugs & RFE")) + wxT("</h5>");
-    page += wxString::Format(_("Please use %sSourceforge Bugtracing system%s to report bug and %sSourceforge RFE system%s to submit a new feature request."),
-    		wxT("<a href=\"http://sourceforge.net/p/dvdstyler/bugs/\" target=\"_blank\">"), wxT("</a>"),
-    		wxT("<a href=\"http://sourceforge.net/p/dvdstyler/feature-requests/\" target=\"_blank\">"), wxT("</a>"));
+    page += wxString::Format(_("Please use the %sGitHub issue tracker%s to report bugs or submit feature requests."),
+        wxT("<a href=\"https://github.com/ntxalex/DVDStyler/issues\" target=\"_blank\">"), wxT("</a>"));
     page += wxT("</body></html>");
     supportPanel->SetPage(page);
     notebook->AddPage(supportPanel, _("Support"));
