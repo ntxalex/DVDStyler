@@ -1,0 +1,54 @@
+# Build check: does the tree still configure and compile against current
+# wxWidgets/FFmpeg? Runs on every push and pull request; publishes nothing.
+name: CI
+
+on:
+  push:
+    branches: ['**']
+    paths-ignore: ['**.md', 'docs/**', 'locale/**']
+  pull_request:
+    paths-ignore: ['**.md', 'docs/**', 'locale/**']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-arch:
+    name: Build (Arch Linux, current FFmpeg + wxWidgets)
+    runs-on: ubuntu-latest
+    # Arch is rolling and closest to Artix: newest FFmpeg/wxWidgets/wxSVG.
+    container: archlinux:latest
+    steps:
+      - name: Install build dependencies
+        run: |
+          pacman -Syu --noconfirm --needed \
+            base-devel git autoconf automake flex bison pkgconf \
+            wxwidgets-gtk3 wxsvg ffmpeg libexif fontconfig systemd-libs dbus \
+            gnome-desktop gettext xmlto docbook-xsl zip \
+            dvdauthor cdrtools dvd+rw-tools
+
+      - uses: actions/checkout@v4
+
+      - name: Show dependency versions
+        run: |
+          pacman -Q ffmpeg wxwidgets-gtk3 wxsvg gcc glibc
+          wx-config --version
+
+      - name: autogen + configure
+        run: |
+          ./autogen.sh
+          ./configure --prefix=/usr/local
+
+      - name: make
+        run: make -j"$(nproc)"
+
+      - name: make install (staged)
+        run: |
+          make install DESTDIR="$PWD/stage"
+          test -x stage/usr/local/bin/dvdstyler
+          objdump -p stage/usr/local/bin/dvdstyler | grep NEEDED

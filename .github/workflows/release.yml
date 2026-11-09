@@ -1,0 +1,126 @@
+# Release build: runs when a version tag (v*) is pushed, e.g.
+#   git tag -a v3.3b4-wj2 -m "DVDStyler 3.3b4-wj2" && git push origin v3.3b4-wj2
+# Builds the source tarball and a self-contained Linux x86_64 tarball, then
+# creates a GitHub Release for the tag with both attached.
+# "Run workflow" (workflow_dispatch) builds the same files as workflow
+# artifacts without creating a release, for testing.
+name: Release
+
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  FFMPEG_VERSION: 9.0.2
+  WX_VERSION: 3.2.12
+  WXSVG_VERSION: 1.5.25
+  # Bump to force a rebuild of the cached dependencies (e.g. after changing
+  # their configure flags in build-linux-bundle.sh).
+  DEPS_CACHE_REV: 1
+
+jobs:
+  source:
+    name: Source tarball (+ test build from it on Arch)
+    runs-on: ubuntu-latest
+    container: archlinux:latest
+    steps:
+      - name: Install build dependencies
+        run: |
+          pacman -Syu --noconfirm --needed \
+            base-devel git autoconf automake flex bison pkgconf \
+            wxwidgets-gtk3 wxsvg ffmpeg libexif fontconfig systemd-libs dbus \
+            gettext xmlto docbook-xsl zip dvdauthor cdrtools dvd+rw-tools
+
+      - uses: actions/checkout@v4
+
+      - name: Check tag matches configure.ac version
+        if: github.ref_type == 'tag'
+        env:
+          TAG: ${{ github.ref_name }}
+        run: |
+          version=$(sed -n 's/^AC_INIT(\[DVDStyler\],\[\([^]]*\)\].*/\1/p' configure.ac)
+          echo "configure.ac version: $version, tag: $TAG"
+          if [ "v$version" != "$TAG" ]; then
+            echo "::error::Tag $TAG does not match configure.ac version $version (expected v$version)"
+            exit 1
+          fi
+
+      - name: Make source tarball
+        run: |
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+          OUT_DIR="$PWD/dist" .github/scripts/make-source-tarball.sh
+
+      - name: Test that the tarball builds
+        run: |
+          mkdir /tmp/tb
+          tar -xjf dist/DVDStyler-*.tar.bz2 -C /tmp/tb
+          cd /tmp/tb/DVDStyler-*
+          ./configure --prefix=/usr/local
+          make -j"$(nproc)"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: source
+          path: dist/*
+          if-no-files-found: error
+
+  linux-bundle:
+    name: Self-contained Linux x86_64 build (Ubuntu 22.04 base)
+    runs-on: ubuntu-latest
+    # Oldest practical base, so the binary needs only glibc >= 2.35.
+    container: ubuntu:22.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Cache FFmpeg/wxWidgets/wxSVG builds
+        uses: actions/cache@v4
+        with:
+          path: /opt/dvdstyler-deps
+          key: deps-jammy-ffmpeg${{ env.FFMPEG_VERSION }}-wx${{ env.WX_VERSION }}-wxsvg${{ env.WXSVG_VERSION }}-rev${{ env.DEPS_CACHE_REV }}
+
+      - name: Build bundle
+        run: OUT_DIR="$PWD/dist" .github/scripts/build-linux-bundle.sh
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: linux-x86_64
+          path: dist/*
+          if-no-files-found: error
+
+  release:
+    name: Create GitHub Release
+    if: github.event_name == 'push' && github.ref_type == 'tag'
+    needs: [source, linux-bundle]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          path: dist
+          merge-multiple: true
+
+      - name: Create release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          TAG: ${{ github.ref_name }}
+        run: |
+          ls -l dist
+          # Alpha/beta/rc versions (e.g. 3.3b4-wj2) are marked as pre-releases.
+          pre=""
+          if printf '%s' "${TAG#v}" | grep -Eq '[0-9](a|b|rc)[0-9]'; then pre="--prerelease"; fi
+          cat > notes.md <<'NOTES'
+          **Downloads**
+          - `DVDStyler-*.tar.bz2`: source tarball (`./configure && make && sudo make install`).
+          - `DVDStyler-*-linux-x86_64.tar.xz`: self-contained Linux build. Unpack anywhere and run `./dvdstyler`.
+            It bundles FFmpeg, wxWidgets, wxSVG and libexif, and needs glibc 2.35 or newer plus GTK3 and GStreamer.
+            See `DEPENDENCIES.txt` inside the tarball for the full list of system libraries and packages.
+          NOTES
+          sed -i 's/^          //' notes.md
+          gh release create "$TAG" dist/* --verify-tag --title "DVDStyler ${TAG#v}" \
+            --notes-file notes.md --generate-notes $pre
