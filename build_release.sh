@@ -1,4 +1,4 @@
-MODULE=DVDStyler-3.3b4-wj1
+MODULE=DVDStyler-3.3b4-wj2
 CODE_DIR=dvdstyler-DVDStyler
 
 rm -rf $CODE_DIR

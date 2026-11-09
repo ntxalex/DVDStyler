@@ -164,7 +164,7 @@ AVFrame* allocPicture(AVPixelFormat pix_fmt, int width, int height) {
 	frame->height = height;
 	frame->format = pix_fmt;
 	if (av_frame_get_buffer(frame, 32) < 0) {
-		av_free(frame);
+		av_frame_free(&frame);
 		return NULL;
 	}
 	return frame;
@@ -222,11 +222,16 @@ bool wxFfmpegMediaEncoder::addVideoStream(int codecId, VideoFormat videoFormat, 
 	}
 	m_videoStm->time_base = c->time_base;
 
-	m_videoOutbuf = (uint8_t*) av_malloc(VIDEO_BUF_SIZE);
-
-	AVCPBProperties *props;
-	props = (AVCPBProperties*) av_packet_side_data_new(&m_videoStm->codecpar->coded_side_data, 
-		&m_videoStm->codecpar->nb_coded_side_data, AV_PKT_DATA_CPB_PROPERTIES, sizeof(*props), 0);
+	// av_packet_side_data_new() returns the new AVPacketSideData entry, not its payload.
+	// Writing an AVCPBProperties (40 bytes) through the returned entry (24 bytes) overflowed
+	// the side data array and corrupted the heap.
+	AVPacketSideData* cpbSideData = av_packet_side_data_new(&m_videoStm->codecpar->coded_side_data,
+		&m_videoStm->codecpar->nb_coded_side_data, AV_PKT_DATA_CPB_PROPERTIES, sizeof(AVCPBProperties), 0);
+	if (!cpbSideData) {
+		wxLogError(wxT("Could not allocate CPB properties"));
+		return false;
+	}
+	AVCPBProperties* props = (AVCPBProperties*) cpbSideData->data;
 	props->buffer_size = VIDEO_BUF_SIZE;
 	props->max_bitrate = 0;
 	props->min_bitrate = 0;
@@ -344,14 +349,12 @@ void wxFfmpegMediaEncoder::CloseAudioEncoder() {
 }
 
 void wxFfmpegMediaEncoder::CloseVideoEncoder() {
-	if (!m_videoStm)
-		return;
-	if (m_imgConvertCtx)
+	if (m_imgConvertCtx) {
 		sws_freeContext(m_imgConvertCtx);
-	if (m_picture) {
-		av_freep(&m_picture->data[0]);
-		av_freep(&m_picture);
+		m_imgConvertCtx = NULL;
 	}
+	// m_picture buffers are reference counted (av_frame_get_buffer)
+	av_frame_free(&m_picture);
 	av_freep(&m_videoOutbuf);
 	avcodec_free_context(&m_videoCodec);
 	m_videoStm = NULL;
@@ -364,6 +367,11 @@ bool wxFfmpegMediaEncoder::EncodeImage(wxImage image, int frames, AbstractProgre
 	if (image.GetWidth() != c->width || image.GetHeight() != c->height) {
 		wxLogError(wxT("Image size (%dx%d) doesn't match frame size (%dx%d)."),
 				image.GetWidth(), image.GetHeight(), c->width, c->height);
+		return false;
+	}
+	// the encoder may still hold a reference to the previous picture
+	if (av_frame_make_writable(m_picture) < 0) {
+		wxLogError(wxT("Could not make video frame writable"));
 		return false;
 	}
 	// convert wxImage to the codec pixel format
@@ -494,28 +502,37 @@ int encode(AVCodecContext *avctx, AVPacket *pkt, AVFrame *frame, int *got_packet
 
 bool wxFfmpegMediaEncoder::writeAudioFrame() {
 	AVPacket* pkt = av_packet_alloc();
+	if (!pkt) {
+		wxLogError(wxT("Could not allocate audio packet"));
+		return false;
+	}
 	AVCodecContext *c = m_audioCodec;
 	
 	m_audioFrame->pts = m_nextAudioPts;
 	m_nextAudioPts += m_audioFrame->nb_samples;
 
 	int got_packet = 0;
-	encode(c, pkt, m_audioFrame, &got_packet);
+	int ret = encode(c, pkt, m_audioFrame, &got_packet);
+	if (ret < 0) {
+		av_packet_free(&pkt);
+		print_error("Error while encoding audio frame", ret);
+		return false;
+	}
 	if (!got_packet) {
-		av_packet_unref(pkt);
+		av_packet_free(&pkt);
 		return true;
 	}
 
+	av_packet_rescale_ts(pkt, c->time_base, m_audioStm->time_base);
 	pkt->stream_index = m_audioStm->index;
 	
 	// write the compressed frame in the media file
-	int ret = av_interleaved_write_frame(m_outputCtx, pkt);
+	ret = av_interleaved_write_frame(m_outputCtx, pkt);
+	av_packet_free(&pkt);
 	if (ret < 0) {
-		av_packet_unref(pkt);
 		print_error("Error while writing audio frame", ret);
 		return false;
 	}
-	av_packet_unref(pkt);
 	return true;
 }
 
@@ -525,13 +542,15 @@ bool wxFfmpegMediaEncoder::writeVideoFrame() {
 	// encode the image
 	m_picture->pts = m_nextVideoPts++;
 	AVPacket* pkt = av_packet_alloc();
-	pkt->data = m_videoOutbuf;
-	pkt->size = VIDEO_BUF_SIZE;
+	if (!pkt) {
+		wxLogError(wxT("Could not allocate video packet"));
+		return false;
+	}
 	
 	int got_packet = 0;
 	int ret = encode(c, pkt, m_picture, &got_packet);
 	if (ret < 0) {
-		av_packet_unref(pkt);
+		av_packet_free(&pkt);
 		print_error("Error while writing video frame", ret);
 		return false;
 	}
@@ -545,20 +564,48 @@ bool wxFfmpegMediaEncoder::writeVideoFrame() {
 		// write the compressed frame in the media file
 		ret = av_interleaved_write_frame(m_outputCtx, pkt);
 		if (ret < 0) {
-			av_packet_unref(pkt);
+			av_packet_free(&pkt);
 			print_error("Error while writing video frame", ret);
 			return false;
 		}
 	}
-	av_packet_unref(pkt);
+	av_packet_free(&pkt);
 	return true;
+}
+
+/** drains delayed packets of an encoder into the output file */
+static void flushEncoder(AVFormatContext* outputCtx, AVCodecContext* c, AVStream* stm) {
+	if (!c || !stm)
+		return;
+	AVPacket* pkt = av_packet_alloc();
+	if (!pkt)
+		return;
+	int ret = avcodec_send_frame(c, NULL);
+	while (ret >= 0) {
+		ret = avcodec_receive_packet(c, pkt);
+		if (ret == AVERROR_EOF || ret == AVERROR(EAGAIN))
+			break;
+		if (ret < 0) {
+			print_error("Error while flushing encoder", ret);
+			break;
+		}
+		av_packet_rescale_ts(pkt, c->time_base, stm->time_base);
+		pkt->stream_index = stm->index;
+		ret = av_interleaved_write_frame(outputCtx, pkt);
+		if (ret < 0)
+			print_error("Error while writing flushed frame", ret);
+	}
+	av_packet_free(&pkt);
 }
 
 void wxFfmpegMediaEncoder::EndEncode() {
 	if (m_outputCtx) {
-		// write the trailer
-		if (m_outputCtx->nb_streams)
+		// write delayed packets and the trailer
+		if (m_outputCtx->nb_streams) {
+			flushEncoder(m_outputCtx, m_videoCodec, m_videoStm);
+			flushEncoder(m_outputCtx, m_audioCodec, m_audioStm);
 			av_write_trailer(m_outputCtx);
+		}
 		
 		CloseEncoder();
 	} else if (m_audioFile != NULL) {
@@ -569,21 +616,20 @@ void wxFfmpegMediaEncoder::EndEncode() {
 }
 
 void wxFfmpegMediaEncoder::CloseEncoder() {
+	CloseVideoEncoder();
+	CloseAudioEncoder();
+	if (m_audioFile != NULL) {
+		fclose(m_audioFile);
+		m_audioFile = NULL;
+	}
 	if (!m_outputCtx)
 		return;
 
-	CloseVideoEncoder();
-	CloseAudioEncoder();
-	
-	// free the streams
-	for (unsigned int i = 0; i < m_outputCtx->nb_streams; i++) {
-		av_freep(&m_outputCtx->streams[i]);
-	}
-
 	// close the output file
-	if (m_outputCtx->pb != NULL)
-		avio_close(m_outputCtx->pb);
+	if (!(m_outputCtx->oformat->flags & AVFMT_NOFILE))
+		avio_closep(&m_outputCtx->pb);
 	
-	// free the stream
-	av_freep(&m_outputCtx);
+	// free the context together with its streams
+	avformat_free_context(m_outputCtx);
+	m_outputCtx = NULL;
 }
