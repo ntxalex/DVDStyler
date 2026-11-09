@@ -324,6 +324,7 @@ wxSizer* wxPropDlg::AddSpinProp(wxSizer* sizer, const wxString& label, int value
 	wxSpinCtrl* ctrl = new wxSpinCtrl(propWindow, -1, wxEmptyString, wxDefaultPosition, size,
 			wxSP_ARROW_KEYS, min, max);
 	ctrl->SetValue(value);
+	wxFitCompactSpinCtrl(ctrl, width, wxString::Format(wxT("%d"), min), wxString::Format(wxT("%d"), max));
 	wxBoxSizer* pane = NULL;
 	if (width > 0) {
 		pane = new wxBoxSizer(wxHORIZONTAL);
@@ -364,6 +365,7 @@ wxSizer* wxPropDlg::AddSpinDoubleProp(wxSizer* sizer, const wxString& label, dou
 	wxSpinCtrlDouble* ctrl = new wxSpinCtrlDouble(propWindow, -1, wxEmptyString, wxDefaultPosition, size,
 			wxSP_ARROW_KEYS, min, max);
 	ctrl->SetValue(value);
+	wxFitCompactSpinCtrl(ctrl, width, wxString::Format(wxT("%g"), min), wxString::Format(wxT("%g"), max));
 #else
 	wxTextCtrl* ctrl = new wxTextCtrl(propWindow, -1, wxString::Format(wxT("%g"), value), wxDefaultPosition, size);
 #endif
@@ -748,6 +750,7 @@ void wxPropDlg::AddColourProp(wxSizer* sizer, const wxString& label, wxColour co
 		wxSpinCtrl* ctrl = new wxSpinCtrl(propWindow, -1, wxEmptyString, wxDefaultPosition, wxSize(54, -1),
 				wxSP_ARROW_KEYS, 0, 100);
 		ctrl->SetValue(opacity);
+		wxFitCompactSpinCtrl(ctrl, 54, wxT("0"), wxT("100"));
 		sizer2->Add(ctrl, 0, wxALL, 2);
 		AddText(sizer2, wxT("%"));
 		m_types.Add(propSPIN);

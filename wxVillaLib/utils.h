@@ -58,4 +58,28 @@ inline void wxSetCompactButtonSize(wxButton* button, int side) {
 #endif
 }
 
+// A compact numeric field still needs native space for its entry and both
+// GTK step buttons. Measure the full range with the actual font/theme instead
+// of treating the legacy requested width as a hard maximum.
+inline void wxFitCompactSpinCtrl(wxControl* control, int width,
+        const wxString& minimum, const wxString& maximum) {
+#ifdef __WXGTK__
+    if (width > 0) {
+        control->SetMinSize(wxDefaultSize);
+        int textWidth = wxMax(control->GetTextExtent(minimum).GetWidth(),
+                control->GetTextExtent(maximum).GetWidth());
+        wxSize size = control->GetSizeFromTextSize(textWidth);
+        if (size.GetWidth() < 0 || size.GetHeight() < 0)
+            size = control->GetBestSize();
+        size.SetWidth(wxMax(width, size.GetWidth()));
+        control->SetInitialSize(size);
+    }
+#else
+    wxUnusedVar(control);
+    wxUnusedVar(width);
+    wxUnusedVar(minimum);
+    wxUnusedVar(maximum);
+#endif
+}
+
 #endif // WXVILLALIB_UTILS_H
