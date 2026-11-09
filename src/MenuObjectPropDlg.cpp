@@ -477,9 +477,9 @@ void MenuObjectPropDlg::CreateImageCrtls(wxFlexGridSizer* grid, const wxString& 
 	m_videoFrameRadio = (wxRadioButton*) GetLastControl();
 	wxBoxSizer* videoFrameSizer = new wxBoxSizer(wxHORIZONTAL);
 	videoFrameSizer->Add(m_videoChoice, 0, wxALIGN_CENTER_VERTICAL);
-	m_videoFrameBt = new wxButton(propWindow, VIDEOFRAME_BT_ID, wxT("..."));
+	m_videoFrameBt = new wxButton(propWindow, VIDEOFRAME_BT_ID, wxT("..."), wxDefaultPosition, wxDefaultSize, wxGetCompactButtonStyle());
 	int h = m_videoFrameBt->GetSize().GetHeight() > 24 ? m_videoFrameBt->GetSize().GetHeight() : 24;
-	m_videoFrameBt->SetSizeHints(h, h, h, h);
+	wxSetCompactButtonSize(m_videoFrameBt, h);
 	videoFrameSizer->Add(m_videoFrameBt);
 	grid->Add(videoFrameSizer);
 	wxCommandEvent evt;

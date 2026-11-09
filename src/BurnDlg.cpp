@@ -111,7 +111,12 @@ BurnDlg::BurnDlg(wxWindow* parent,DVD* dvd, Cache* cache) {
 	tempDirSizer = new wxBoxSizer(wxHORIZONTAL);
 	m_tempDirText = new wxTextCtrl(this, TEMP_DIR_FIELD_ID, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0, wxDefaultValidator, _T("TEMP_DIR_FIELD_ID"));
 	tempDirSizer->Add(m_tempDirText, 1, wxRIGHT|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 2);
-	m_tempDirBt = new wxButton(this, TEMP_DIR_BT_ID, _("..."), wxDefaultPosition, wxSize(21,21), 0, wxDefaultValidator, _T("TEMP_DIR_BT_ID"));
+	// Do not impose a pre-layout square minimum on GTK ellipsis buttons.
+	wxSize browseButtonSize(21, 21);
+#ifdef __WXGTK__
+	browseButtonSize = wxDefaultSize;
+#endif
+	m_tempDirBt = new wxButton(this, TEMP_DIR_BT_ID, _("..."), wxDefaultPosition, browseButtonSize, wxGetCompactButtonStyle(), wxDefaultValidator, _T("TEMP_DIR_BT_ID"));
 	tempDirSizer->Add(m_tempDirBt, 0, wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 0);
 	tempDirGrid->Add(tempDirSizer, 1, wxTOP|wxBOTTOM|wxEXPAND, 4);
 	tempDirGrid->Add(16,16,0, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 0);
@@ -135,7 +140,7 @@ BurnDlg::BurnDlg(wxWindow* parent,DVD* dvd, Cache* cache) {
 	previewSizer->Add(m_previewChoice, 0, wxRIGHT|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 2);
 	m_previewTextCtrl = new wxTextCtrl(this, ID_TEXTCTRL2, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0, wxDefaultValidator, _T("ID_TEXTCTRL2"));
 	previewSizer->Add(m_previewTextCtrl, 1, wxRIGHT|wxEXPAND, 2);
-	m_previewBt = new wxButton(this, ID_PREVIEW_BT, _("..."), wxDefaultPosition, wxSize(21,21), 0, wxDefaultValidator, _T("ID_PREVIEW_BT"));
+	m_previewBt = new wxButton(this, ID_PREVIEW_BT, _("..."), wxDefaultPosition, browseButtonSize, wxGetCompactButtonStyle(), wxDefaultValidator, _T("ID_PREVIEW_BT"));
 	previewSizer->Add(m_previewBt, 0, wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 0);
 	m_okBitmap = new wxStaticBitmap(this, wxID_ANY, wxBITMAP_FROM_MEMORY(ok), wxDefaultPosition, wxDefaultSize, wxNO_BORDER, _T("wxID_ANY"));
 	m_okBitmap->Hide();
@@ -157,7 +162,7 @@ BurnDlg::BurnDlg(wxWindow* parent,DVD* dvd, Cache* cache) {
 	outputSizer = new wxBoxSizer(wxHORIZONTAL);
 	m_outputDirText = new wxTextCtrl(this, ID_TEXTCTRL1, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0, wxDefaultValidator, _T("ID_TEXTCTRL1"));
 	outputSizer->Add(m_outputDirText, 1, wxRIGHT|wxEXPAND, 2);
-	m_outputDirBt = new wxButton(this, ID_OUTPUT_BT, _("..."), wxDefaultPosition, wxSize(21,21), 0, wxDefaultValidator, _T("ID_OUTPUT_BT"));
+	m_outputDirBt = new wxButton(this, ID_OUTPUT_BT, _("..."), wxDefaultPosition, browseButtonSize, wxGetCompactButtonStyle(), wxDefaultValidator, _T("ID_OUTPUT_BT"));
 	outputSizer->Add(m_outputDirBt, 0, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 0);
 	outputGrid->Add(outputSizer, 1, wxTOP|wxBOTTOM|wxEXPAND, 4);
 	outputGrid->Add(16,16,0, wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 0);
@@ -183,7 +188,7 @@ BurnDlg::BurnDlg(wxWindow* parent,DVD* dvd, Cache* cache) {
 	isoSizer = new wxBoxSizer(wxHORIZONTAL);
 	m_isoText = new wxTextCtrl(this, ISO_FILE_FIELD_ID, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0, wxDefaultValidator, _T("ISO_FILE_FIELD_ID"));
 	isoSizer->Add(m_isoText, 1, wxRIGHT|wxEXPAND, 2);
-	m_isoBt = new wxButton(this, ISO_BT_ID, _("..."), wxDefaultPosition, wxSize(21,21), 0, wxDefaultValidator, _T("ISO_BT_ID"));
+	m_isoBt = new wxButton(this, ISO_BT_ID, _("..."), wxDefaultPosition, browseButtonSize, wxGetCompactButtonStyle(), wxDefaultValidator, _T("ISO_BT_ID"));
 	isoSizer->Add(m_isoBt, 0, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 0);
 	isoGrid->Add(isoSizer, 1, wxTOP|wxBOTTOM|wxEXPAND, 4);
 	isoGrid->Add(16,16,0, wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 0);
@@ -254,10 +259,10 @@ BurnDlg::BurnDlg(wxWindow* parent,DVD* dvd, Cache* cache) {
 	m_tempDirText->SetFocus();
 
 	int h = m_tempDirText->GetSize().GetHeight() > 21 ? m_tempDirText->GetSize().GetHeight() : 21;
-	m_tempDirBt->SetSizeHints(h, h, h, h);
-	m_previewBt->SetSizeHints(h, h, h, h);
-	m_outputDirBt->SetSizeHints(h, h, h, h);
-	m_isoBt->SetSizeHints(h, h, h, h);
+	wxSetCompactButtonSize(m_tempDirBt, h);
+	wxSetCompactButtonSize(m_previewBt, h);
+	wxSetCompactButtonSize(m_outputDirBt, h);
+	wxSetCompactButtonSize(m_isoBt, h);
 
 	// set devices
 	EnumDevices(m_devices, m_deviceChoice);

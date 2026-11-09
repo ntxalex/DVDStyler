@@ -112,7 +112,9 @@ AudioPropDlg::AudioPropDlg(wxWindow* parent,Vob* vob, const wxString& audioFile,
 	boxSizer2->Add(m_offsetCtrl, 0, wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 0);
 	m_offsetSpin = new wxSpinButton(this, ID_SPINBUTTON2, wxDefaultPosition, wxDefaultSize, wxSP_VERTICAL|wxSP_ARROW_KEYS, _T("ID_SPINBUTTON2"));
 	m_offsetSpin->SetRange(0, 999);
+#ifndef __WXGTK__ // GTK needs its native width for side-by-side spin arrows.
 	m_offsetSpin->SetMinSize(wxSize(16,12));
+#endif
 	boxSizer2->Add(m_offsetSpin, 0, wxEXPAND, 0);
 	label8 = new wxStaticText(this, wxID_ANY, _("ms"), wxDefaultPosition, wxDefaultSize, 0, _T("wxID_ANY"));
 	boxSizer2->Add(label8, 0, wxALL|wxEXPAND, 5);
@@ -141,7 +143,9 @@ AudioPropDlg::AudioPropDlg(wxWindow* parent,Vob* vob, const wxString& audioFile,
 	BoxSizer1->Add(m_volume2Ctrl, 0, wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 0);
 	m_volume2Spin = new wxSpinButton(this, ID_SPINBUTTON3, wxDefaultPosition, wxDefaultSize, wxSP_VERTICAL|wxSP_ARROW_KEYS, _T("ID_SPINBUTTON3"));
 	m_volume2Spin->SetRange(-999999, 999999);
+#ifndef __WXGTK__ // GTK needs its native width for side-by-side spin arrows.
 	m_volume2Spin->SetMinSize(wxSize(16,12));
+#endif
 	BoxSizer1->Add(m_volume2Spin, 0, wxLEFT|wxEXPAND, 2);
 	GridBagSizer2->Add(BoxSizer1, wxGBPosition(2, 1), wxDefaultSpan, wxEXPAND, 5);
 	normBoxSizer = new wxBoxSizer(wxHORIZONTAL);

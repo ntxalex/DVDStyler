@@ -64,11 +64,15 @@ VideoFrameDlg::VideoFrameDlg(wxWindow* parent, wxString fileName, bool custom, l
 	boxSizer1->Add(m_timeCtrl, 0, wxLEFT|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
 	m_timeSpinBt = new wxSpinButton(this, ID_TIME_SPINB, wxDefaultPosition, wxDefaultSize, wxSP_VERTICAL|wxSP_ARROW_KEYS, _T("ID_TIME_SPINB"));
 	m_timeSpinBt->SetRange(0, 100);
+#ifndef __WXGTK__ // GTK needs its native width for side-by-side spin arrows.
 	m_timeSpinBt->SetMinSize(wxSize(16,12));
+#endif
 	boxSizer1->Add(m_timeSpinBt, 0, wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
 	m_frameSpinBt = new wxSpinButton(this, ID_FRAME_SPINBT, wxDefaultPosition, wxDefaultSize, wxSP_VERTICAL|wxSP_ARROW_KEYS|wxSP_WRAP, _T("ID_FRAME_SPINBT"));
 	m_frameSpinBt->SetRange(-9999, 9999);
+#ifndef __WXGTK__ // GTK needs its native width for side-by-side spin arrows.
 	m_frameSpinBt->SetMinSize(wxSize(16,12));
+#endif
 	boxSizer1->Add(m_frameSpinBt, 0, wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
 	m_resetTimeBt = new wxBitmapButton(this, ID_RESET_TIME_BT, wxArtProvider::GetBitmap(wxART_MAKE_ART_ID_FROM_STR(_T("wxART_UNDO")),wxART_MENU), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW, wxDefaultValidator, _T("ID_RESET_TIME_BT"));
 	m_resetTimeBt->SetDefault();

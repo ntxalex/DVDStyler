@@ -132,11 +132,15 @@ ChaptersDlg::ChaptersDlg(wxWindow* parent, DVD* dvd, int tsi, int pgci, int vobi
 	BoxSizer5->Add(m_timeCtrl, 0, wxEXPAND, 5);
 	m_timeSpinBt = new wxSpinButton(panel2, ID_TIME_SPINB, wxDefaultPosition, wxDefaultSize, wxSP_VERTICAL|wxSP_ARROW_KEYS, _T("ID_TIME_SPINB"));
 	m_timeSpinBt->SetRange(0, 100);
+#ifndef __WXGTK__ // GTK needs its native width for side-by-side spin arrows.
 	m_timeSpinBt->SetMinSize(wxSize(16,12));
+#endif
 	BoxSizer5->Add(m_timeSpinBt, 0, wxEXPAND, 5);
 	m_frameSpinBt = new wxSpinButton(panel2, ID_FRAME_SPINBT, wxDefaultPosition, wxDefaultSize, wxSP_VERTICAL|wxSP_ARROW_KEYS, _T("ID_FRAME_SPINBT"));
 	m_frameSpinBt->SetRange(-9999, 9999);
+#ifndef __WXGTK__ // GTK needs its native width for side-by-side spin arrows.
 	m_frameSpinBt->SetMinSize(wxSize(16,12));
+#endif
 	BoxSizer5->Add(m_frameSpinBt, 0, wxEXPAND, 5);
 	flexGridSizer1->Add(BoxSizer5, 0, wxALL|wxEXPAND, 0);
 	staticText5 = new wxStaticText(panel2, wxID_ANY, _("Type:"), wxDefaultPosition, wxDefaultSize, 0, _T("wxID_ANY"));
@@ -160,11 +164,15 @@ ChaptersDlg::ChaptersDlg(wxWindow* parent, DVD* dvd, int tsi, int pgci, int vobi
 	BoxSizer6->Add(m_endCtrl, 0, wxLEFT|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 2);
 	m_endSpinBt = new wxSpinButton(panel2, ID_END_SPIN, wxDefaultPosition, wxDefaultSize, wxSP_VERTICAL|wxSP_ARROW_KEYS, _T("ID_END_SPIN"));
 	m_endSpinBt->SetRange(0, 100);
+#ifndef __WXGTK__ // GTK needs its native width for side-by-side spin arrows.
 	m_endSpinBt->SetMinSize(wxSize(16,12));
+#endif
 	BoxSizer6->Add(m_endSpinBt, 0, wxEXPAND, 0);
 	m_endFrameSpinBt = new wxSpinButton(panel2, ID_END_FRAME_SPINBT, wxDefaultPosition, wxDefaultSize, wxSP_VERTICAL|wxSP_ARROW_KEYS, _T("ID_END_FRAME_SPINBT"));
 	m_endFrameSpinBt->SetRange(-9999, 9999);
+#ifndef __WXGTK__ // GTK needs its native width for side-by-side spin arrows.
 	m_endFrameSpinBt->SetMinSize(wxSize(16,12));
+#endif
 	BoxSizer6->Add(m_endFrameSpinBt, 0, wxEXPAND, 5);
 	staticText2 = new wxStaticText(panel2, wxID_ANY, _("Pause:"), wxDefaultPosition, wxDefaultSize, 0, _T("wxID_ANY"));
 	BoxSizer6->Add(staticText2, 0, wxLEFT|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 8);

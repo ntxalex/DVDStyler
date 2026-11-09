@@ -216,11 +216,15 @@ VideoPropDlg::VideoPropDlg(wxWindow* parent, DVD* dvd, Vob* vob, Stream* stream,
 	timeSizer->Add(m_timeCtrl, 0, wxLEFT|wxEXPAND, 2);
 	m_timeSpinBt = new wxSpinButton(this, ID_TIME_SPINB, wxDefaultPosition, wxDefaultSize, wxSP_VERTICAL|wxSP_ARROW_KEYS, _T("ID_TIME_SPINB"));
 	m_timeSpinBt->SetRange(0, 100);
+#ifndef __WXGTK__ // GTK needs its native width for side-by-side spin arrows.
 	m_timeSpinBt->SetMinSize(wxSize(16,12));
+#endif
 	timeSizer->Add(m_timeSpinBt, 0, wxEXPAND, 5);
 	m_frameSpinBt = new wxSpinButton(this, ID_FRAME_SPINBT, wxDefaultPosition, wxDefaultSize, wxSP_VERTICAL|wxSP_ARROW_KEYS|wxSP_WRAP, _T("ID_FRAME_SPINBT"));
 	m_frameSpinBt->SetRange(-9999, 9999);
+#ifndef __WXGTK__ // GTK needs its native width for side-by-side spin arrows.
 	m_frameSpinBt->SetMinSize(wxSize(16,12));
+#endif
 	timeSizer->Add(m_frameSpinBt, 0, wxEXPAND, 5);
 	startLabel = new wxStaticText(this, wxID_ANY, _("Start:"), wxDefaultPosition, wxDefaultSize, 0, _T("wxID_ANY"));
 	timeSizer->Add(startLabel, 0, wxLEFT|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 8);
@@ -228,11 +232,15 @@ VideoPropDlg::VideoPropDlg(wxWindow* parent, DVD* dvd, Vob* vob, Stream* stream,
 	timeSizer->Add(m_startCtrl, 0, wxLEFT|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 2);
 	m_startSpin = new wxSpinButton(this, ID_SPINBUTTON1, wxDefaultPosition, wxDefaultSize, wxSP_VERTICAL|wxSP_ARROW_KEYS|wxSP_WRAP, _T("ID_SPINBUTTON1"));
 	m_startSpin->SetRange(-9999, 9999);
+#ifndef __WXGTK__ // GTK needs its native width for side-by-side spin arrows.
 	m_startSpin->SetMinSize(wxSize(16,12));
+#endif
 	timeSizer->Add(m_startSpin, 0, wxEXPAND, 5);
 	m_startFrameSpin = new wxSpinButton(this, ID_SPINBUTTON2, wxDefaultPosition, wxDefaultSize, wxSP_VERTICAL|wxSP_ARROW_KEYS|wxSP_WRAP, _T("ID_SPINBUTTON2"));
 	m_startFrameSpin->SetRange(-9999, 9999);
+#ifndef __WXGTK__ // GTK needs its native width for side-by-side spin arrows.
 	m_startFrameSpin->SetMinSize(wxSize(16,12));
+#endif
 	timeSizer->Add(m_startFrameSpin, 0, wxEXPAND, 5);
 	m_startBt = new wxBitmapButton(this, START_BT_ID, wxArtProvider::GetBitmap(wxART_MAKE_ART_ID_FROM_STR(_T("wxART_CUT")),wxART_MENU), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW, wxDefaultValidator, _T("START_BT_ID"));
 	m_startBt->SetDefault();
@@ -244,11 +252,15 @@ VideoPropDlg::VideoPropDlg(wxWindow* parent, DVD* dvd, Vob* vob, Stream* stream,
 	timeSizer->Add(m_endCtrl, 0, wxLEFT|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 2);
 	m_endSpin = new wxSpinButton(this, ID_SPINBUTTON3, wxDefaultPosition, wxDefaultSize, wxSP_VERTICAL|wxSP_ARROW_KEYS|wxSP_WRAP, _T("ID_SPINBUTTON3"));
 	m_endSpin->SetRange(-9999, 9999);
+#ifndef __WXGTK__ // GTK needs its native width for side-by-side spin arrows.
 	m_endSpin->SetMinSize(wxSize(16,12));
+#endif
 	timeSizer->Add(m_endSpin, 0, wxEXPAND, 0);
 	m_endFrameSpin = new wxSpinButton(this, ID_SPINBUTTON4, wxDefaultPosition, wxDefaultSize, wxSP_VERTICAL|wxSP_ARROW_KEYS|wxSP_WRAP, _T("ID_SPINBUTTON4"));
 	m_endFrameSpin->SetRange(-9999, 9999);
+#ifndef __WXGTK__ // GTK needs its native width for side-by-side spin arrows.
 	m_endFrameSpin->SetMinSize(wxSize(16,12));
+#endif
 	timeSizer->Add(m_endFrameSpin, 0, wxEXPAND, 0);
 	m_endBt = new wxBitmapButton(this, ID_RESET_TIME_BT, wxArtProvider::GetBitmap(wxART_MAKE_ART_ID_FROM_STR(_T("wxART_CUT")),wxART_MENU), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW, wxDefaultValidator, _T("ID_RESET_TIME_BT"));
 	m_endBt->SetDefault();

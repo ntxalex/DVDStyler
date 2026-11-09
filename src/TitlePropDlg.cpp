@@ -142,9 +142,9 @@ void TitlePropDlg::CreateVobGroup(wxSizer* sizer) {
 	grid->Add(chaptersPane, 0, wxEXPAND);
 	AddTextProp(chaptersPane, wxT(""), m_vob->GetChapters());
 	m_chaptersCtrl = (wxTextCtrl*) GetLastControl();
-	m_chaptersBt = new wxButton(this, CHAPTERS_BT_ID, wxT("..."));
+	m_chaptersBt = new wxButton(this, CHAPTERS_BT_ID, wxT("..."), wxDefaultPosition, wxDefaultSize, wxGetCompactButtonStyle());
 	int h = m_chaptersBt->GetSize().GetHeight() > 24 ? m_chaptersBt->GetSize().GetHeight() : 24;
-	m_chaptersBt->SetSizeHints(h, h, h, h);
+	wxSetCompactButtonSize(m_chaptersBt, h);
 	chaptersPane->Add(m_chaptersBt, 0, wxALIGN_CENTER_VERTICAL|wxRIGHT, 4);
 	// Pause
 	AddSpinProp(grid, _("Pause:"), m_vob->GetPause(), -1, 254, 100, _("sec"));
